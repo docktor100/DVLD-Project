@@ -1,0 +1,18 @@
+C:\Users\bdllh\OneDrive\المستندات\Visual Studio 2022\course 19\BusinessLayer\obj\Debug\BusinessLayer.csproj.AssemblyReference.cache
+C:\Users\bdllh\OneDrive\المستندات\Visual Studio 2022\course 19\BusinessLayer\obj\Debug\BusinessLayer.csproj.CoreCompileInputs.cache
+C:\Users\bdllh\OneDrive\المستندات\Visual Studio 2022\course 19\BusinessLayer\bin\Debug\BusinessLayer.dll
+C:\Users\bdllh\OneDrive\المستندات\Visual Studio 2022\course 19\BusinessLayer\bin\Debug\BusinessLayer.pdb
+C:\Users\bdllh\OneDrive\المستندات\Visual Studio 2022\course 19\BusinessLayer\bin\Debug\DataAccessLayer.dll
+C:\Users\bdllh\OneDrive\المستندات\Visual Studio 2022\course 19\BusinessLayer\bin\Debug\DataAccessLayer.pdb
+C:\Users\bdllh\OneDrive\المستندات\Visual Studio 2022\course 19\BusinessLayer\obj\Debug\Business.EA331CBA.Up2Date
+C:\Users\bdllh\OneDrive\المستندات\Visual Studio 2022\course 19\BusinessLayer\obj\Debug\BusinessLayer.dll
+C:\Users\bdllh\OneDrive\المستندات\Visual Studio 2022\course 19\BusinessLayer\obj\Debug\BusinessLayer.pdb
+C:\Users\bdllh\OneDrive\المستندات\Visual Studio 2022\course 19\My DVLD\BusinessLayer\bin\Debug\BusinessLayer.dll
+C:\Users\bdllh\OneDrive\المستندات\Visual Studio 2022\course 19\My DVLD\BusinessLayer\bin\Debug\BusinessLayer.pdb
+C:\Users\bdllh\OneDrive\المستندات\Visual Studio 2022\course 19\My DVLD\BusinessLayer\bin\Debug\DataAccessLayer.dll
+C:\Users\bdllh\OneDrive\المستندات\Visual Studio 2022\course 19\My DVLD\BusinessLayer\bin\Debug\DataAccessLayer.pdb
+C:\Users\bdllh\OneDrive\المستندات\Visual Studio 2022\course 19\My DVLD\BusinessLayer\obj\Debug\BusinessLayer.csproj.AssemblyReference.cache
+C:\Users\bdllh\OneDrive\المستندات\Visual Studio 2022\course 19\My DVLD\BusinessLayer\obj\Debug\BusinessLayer.csproj.CoreCompileInputs.cache
+C:\Users\bdllh\OneDrive\المستندات\Visual Studio 2022\course 19\My DVLD\BusinessLayer\obj\Debug\Business.EA331CBA.Up2Date
+C:\Users\bdllh\OneDrive\المستندات\Visual Studio 2022\course 19\My DVLD\BusinessLayer\obj\Debug\BusinessLayer.dll
+C:\Users\bdllh\OneDrive\المستندات\Visual Studio 2022\course 19\My DVLD\BusinessLayer\obj\Debug\BusinessLayer.pdb

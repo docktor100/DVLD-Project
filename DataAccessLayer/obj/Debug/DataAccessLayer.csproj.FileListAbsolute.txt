@@ -1,0 +1,12 @@
+C:\Users\bdllh\OneDrive\المستندات\Visual Studio 2022\course 19\DataAccessLayer\bin\Debug\DataAccessLayer.dll
+C:\Users\bdllh\OneDrive\المستندات\Visual Studio 2022\course 19\DataAccessLayer\bin\Debug\DataAccessLayer.pdb
+C:\Users\bdllh\OneDrive\المستندات\Visual Studio 2022\course 19\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.AssemblyReference.cache
+C:\Users\bdllh\OneDrive\المستندات\Visual Studio 2022\course 19\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.CoreCompileInputs.cache
+C:\Users\bdllh\OneDrive\المستندات\Visual Studio 2022\course 19\DataAccessLayer\obj\Debug\DataAccessLayer.dll
+C:\Users\bdllh\OneDrive\المستندات\Visual Studio 2022\course 19\DataAccessLayer\obj\Debug\DataAccessLayer.pdb
+C:\Users\bdllh\OneDrive\المستندات\Visual Studio 2022\course 19\My DVLD\DataAccessLayer\bin\Debug\DataAccessLayer.dll
+C:\Users\bdllh\OneDrive\المستندات\Visual Studio 2022\course 19\My DVLD\DataAccessLayer\bin\Debug\DataAccessLayer.pdb
+C:\Users\bdllh\OneDrive\المستندات\Visual Studio 2022\course 19\My DVLD\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.AssemblyReference.cache
+C:\Users\bdllh\OneDrive\المستندات\Visual Studio 2022\course 19\My DVLD\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.CoreCompileInputs.cache
+C:\Users\bdllh\OneDrive\المستندات\Visual Studio 2022\course 19\My DVLD\DataAccessLayer\obj\Debug\DataAccessLayer.dll
+C:\Users\bdllh\OneDrive\المستندات\Visual Studio 2022\course 19\My DVLD\DataAccessLayer\obj\Debug\DataAccessLayer.pdb

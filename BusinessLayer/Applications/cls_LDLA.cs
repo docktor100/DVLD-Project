@@ -1,7 +1,5 @@
 ﻿using BusinessLayer.Applications;
-using BusinessLayer.Tests;
 using DataAccessLayer.Specific;
-using System;
 using System.Data;
 
 namespace BusinessLayer.Specific
@@ -107,23 +105,11 @@ namespace BusinessLayer.Specific
 
 
         new public static bool Delete(int lDLA_ID)
-        {//new because the same method exists in the base calss
+        {//"new" because the same method exists in the base calss
+
             cls_LDLA lDLA = cls_LDLA.Find(lDLA_ID);
 
-            if (!clsTests.Delete(lDLA_ID))
-                throw new Exception("❌ Failed to delete tests related to this Local Driving License Application.");
-
-            if (!clsTestAppointments.Delete(lDLA_ID))
-                throw new Exception($"❌ Failed to delete test appointments related to this LDLA after tests were deleted.\n➡ Manually delete by LDLA_ID = {lDLA_ID}.");
-
-            if (!cls_LDLA_Data.Delete(lDLA_ID))
-                throw new Exception($"❌ Failed to delete the LDLA after deleting related tests and appointments.\n➡ Manually delete by ID = {lDLA_ID}.");
-
-            if (!clsApplication.Delete(lDLA.ApplicationID))
-                throw new Exception($"❌ Failed to delete the application record after deleting LDLA and related data.\n➡ Manually delete by ApplicationID = {lDLA.ApplicationID}.");
-
-            return true;
-
+            return cls_LDLA_Data.Delete(lDLA_ID, lDLA.ApplicationID); //optimized version
         }
 
         private bool _AddNew()

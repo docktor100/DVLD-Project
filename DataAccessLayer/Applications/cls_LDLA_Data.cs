@@ -193,6 +193,60 @@ namespace DataAccessLayer.Specific
 
             return (RowsAffected > 0);
         }
+        public static bool Delete(int lDLA_ID, int ApplicationID)
+        {
+            SqlConnection connection = new SqlConnection(clsDataAccessSetting.ConnectionString);
+
+            string Query = @"begin transaction 
+                             begin try
+                             
+                             	delete from Tests
+                                                         where TestID in
+                                                         (select testID from LDLA_Tests_View
+                                                         where LocalDrivingLicenseApplicationID = @LocalDrivingLicenseApplicationID); --this View returns LDLA_ID and TestID Columns
+                             
+                             	DELETE FROM TestAppointments
+                                                         WHERE LocalDrivingLicenseApplicationID = @LocalDrivingLicenseApplicationID
+                             
+                             	DELETE FROM LocalDrivingLicenseApplications
+                                                         WHERE LocalDrivingLicenseApplicationID = @LocalDrivingLicenseApplicationID
+                             
+                             	DELETE FROM Applications
+                                                         WHERE ApplicationID = @ApplicationID
+                             
+                             	
+                             	commit
+
+                             end try
+                             
+                             begin catch
+                             	rollback
+                             end catch";
+
+            SqlCommand Command = new SqlCommand(Query, connection);
+            Command.Parameters.AddWithValue("@LocalDrivingLicenseApplicationID", lDLA_ID);
+            Command.Parameters.AddWithValue("@ApplicationID", ApplicationID);
+
+            bool IsDeleted;
+            try
+            {
+                connection.Open();
+                Command.ExecuteNonQuery();
+                IsDeleted = true;
+            }
+            catch (Exception ex)
+            {
+
+                Console.WriteLine(ex.Message);
+                IsDeleted = false;
+            }
+            finally
+            {
+                connection.Close();
+            }
+
+            return IsDeleted;
+        }
 
         public static int AddNew(int applicationID, int licenseClassID)
         {

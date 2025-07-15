@@ -196,7 +196,7 @@ namespace DVLD_Project.Small_Forms.Applications
             }
             else
             {
-                MessageBox.Show("Delete failed due to a fail in deleting LDLA data", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Delete failed due to a fail in deleting local icense application data", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
             Load_LDLA_ListToGrid();

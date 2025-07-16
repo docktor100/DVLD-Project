@@ -124,14 +124,6 @@ namespace DataAccessLayer.Drivers___Licenses
             Command.Parameters.AddWithValue("@fineFees", fineFees);
             Command.Parameters.AddWithValue("@createdByUserID", createdByUserID);
 
-
-
-            Command.Parameters.AddWithValue("@isReleased", false);
-
-            Command.Parameters.AddWithValue("@releasedByUserID", DBNull.Value);
-            Command.Parameters.AddWithValue("@releaseDate", DBNull.Value);
-            Command.Parameters.AddWithValue("@releaseApplicationID", DBNull.Value);
-
             int ID = -1;
 
             try
@@ -157,47 +149,79 @@ namespace DataAccessLayer.Drivers___Licenses
             return ID;
         }
 
-        public static bool Update(int detainID, bool isReleased,
-                            DateTime releaseDate, int releasedByUserID,
-                             int releaseApplicationID)
+        public static bool ReleaseDetainedLicense(int detainID, int releasedByUserID
+                                 , int PersonID, float PaidFees, out int releaseApplicationID)
         {
-            int RowsAffected = 0;
             SqlConnection connection = new SqlConnection(clsDataAccessSetting.ConnectionString);
 
             string Query = @"
-          update dbo.DetainedLicenses
-            set isReleased = @isReleased 
-                ,releaseDate = @releaseDate
-                ,releasedByUserID = @releasedByUserID
-               ,releaseApplicationID = @releaseApplicationID
+                            BEGIN TRANSACTION
+                            BEGIN TRY
+                            
+                                INSERT INTO dbo.Applications
+                                   (ApplicantPersonID, ApplicationDate, ApplicationTypeID, ApplicationStatus, LastStatusDate, PaidFees, CreatedByUserID)
+                                VALUES
+                                   (@ApplicantPersonID, @ApplicationDate, @ApplicationTypeID, @ApplicationStatus, @LastStatusDate, @PaidFees, @CreatedByUserID);
+                            
+                                Declare @releaseApplicationID int = SCOPE_IDENTITY();
 
-            where detainID = @detainID
-               ";
+
+                                UPDATE dbo.DetainedLicenses
+                                SET isReleased = @isReleased,
+                                    releaseDate = @releaseDate,
+                                    releasedByUserID = @releasedByUserID,
+                                    releaseApplicationID = @releaseApplicationID
+                                WHERE detainID = @detainID;
+                            
+                                COMMIT TRANSACTION
+
+                                select @releaseApplicationID AS releaseApplicationID;
+                            
+                            END TRY
+                            BEGIN CATCH
+                                ROLLBACK TRANSACTION
+                                THROW;  -- Re-throw the error so it can be caught in C#
+                            END CATCH
+                            ";
 
             SqlCommand Command = new SqlCommand(Query, connection);
-            Command.Parameters.AddWithValue("@detainID", detainID);
 
-            Command.Parameters.AddWithValue("@isReleased", isReleased);
-            Command.Parameters.AddWithValue("@releaseDate", releaseDate);
-            Command.Parameters.AddWithValue("@releaseApplicationID", releaseApplicationID);
+            Command.Parameters.AddWithValue("@detainID", detainID);
+            Command.Parameters.AddWithValue("@isReleased", true);
+            Command.Parameters.AddWithValue("@releaseDate", DateTime.Now);
+            //Command.Parameters.AddWithValue("@releaseApplicationID", releaseApplicationID); declared inside the query
             Command.Parameters.AddWithValue("@releasedByUserID", releasedByUserID);
 
+
+            // The parameters for INSERT application :
+            Command.Parameters.AddWithValue("@ApplicantPersonID", PersonID);
+            Command.Parameters.AddWithValue("@ApplicationDate", DateTime.Now);
+            Command.Parameters.AddWithValue("@ApplicationTypeID", 5); // stands for release detained license
+            Command.Parameters.AddWithValue("@ApplicationStatus", 3); // stands for completed
+            Command.Parameters.AddWithValue("@LastStatusDate", DateTime.Now);
+            Command.Parameters.AddWithValue("@PaidFees", PaidFees);
+            Command.Parameters.AddWithValue("@CreatedByUserID", releasedByUserID);
+
+            releaseApplicationID = -1;
+            bool isReleased = false;
             try
             {
                 connection.Open();
-                RowsAffected = Command.ExecuteNonQuery();
+                releaseApplicationID = (int)Command.ExecuteScalar();
 
+                isReleased = true;
             }
             catch (Exception ex)
             {
-
+                Console.WriteLine(ex.Message);
+                isReleased = false;
             }
             finally
             {
                 connection.Close();
             }
 
-            return (RowsAffected > 0);
+            return isReleased;
         }
 
         public static DataTable List()

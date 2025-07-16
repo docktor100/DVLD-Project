@@ -1,10 +1,25 @@
-# Ignore Visual Studio files
+# Ignore Visual Studio temporary files
 .vs/
 *.user
 *.suo
-*.vcxproj.user
-*.dbmdl
 *.cache
 *.pdb
+*.dbmdl
+*.log
+
+# Ignore build output
 bin/
 obj/
+TestResults/
+*.exe
+*.dll
+
+# Ignore other temp files
+*.tmp
+*.bak
+*.swp
+*.ncb
+*.sdf
+
+# Optional: ignore IDE settings
+*.vcxproj.user

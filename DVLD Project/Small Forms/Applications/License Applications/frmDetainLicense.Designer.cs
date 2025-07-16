@@ -90,9 +90,9 @@ namespace DVLD_Project.Small_Forms.Applications.License_Applications
             this.label12.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.Location = new System.Drawing.Point(458, 30);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(146, 16);
+            this.label12.Size = new System.Drawing.Size(92, 16);
             this.label12.TabIndex = 153;
-            this.label12.Text = "License PersonID :";
+            this.label12.Text = "License ID:";
             // 
             // label16
             // 
@@ -239,9 +239,9 @@ namespace DVLD_Project.Small_Forms.Applications.License_Applications
             this.label14.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.Location = new System.Drawing.Point(10, 30);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(138, 16);
+            this.label14.Size = new System.Drawing.Size(84, 16);
             this.label14.TabIndex = 130;
-            this.label14.Text = "Detain PersonID :";
+            this.label14.Text = "Detain ID:";
             // 
             // label7
             // 

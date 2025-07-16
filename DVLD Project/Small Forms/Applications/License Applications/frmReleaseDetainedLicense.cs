@@ -166,16 +166,13 @@ namespace DVLD_Project.Small_Forms.Applications.License_Applications
                 return;
             }
 
-            if (!AddNewApplication())
-            {
-                return;
-            }
+            //if (!AddNewApplication())
+            //{
+            //    return;
+            //} used transaction inside the release query instead
 
-            DetainInfo.IsReleased = true;
-            DetainInfo.ReleaseDate = DateTime.Now;
-            DetainInfo.ReleasedByUser = clsGlobal.CurrentUser;
 
-            if (DetainInfo.Save())
+            if (DetainInfo.Release(clsGlobal.CurrentUser.UserID))
             {
                 ActivateLicense();
 
@@ -195,7 +192,7 @@ namespace DVLD_Project.Small_Forms.Applications.License_Applications
                     MessageBoxButtons.OK, MessageBoxIcon.Error);
 
 
-                DeleteApplicationAfterFail();
+                //DeleteApplicationAfterFail(); used transaction inside the release query instead
             }
         }
 

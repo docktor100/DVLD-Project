@@ -81,17 +81,28 @@ namespace BusinessLayer.Drivers___Licenses
             return clsDetainedLicensesData.List();
         }
 
-        private bool _AddNew()
+        private bool _NewDetain()
         {
             DetainID = clsDetainedLicensesData.AddNew(License.LicenseID, DetainDate,
                                                       FineFees, CreatedByUser.UserID);
 
             return DetainID != -1;
         }
-        private bool _Update()
+        public bool Release(int releasedByUserID)
         {
-            return clsDetainedLicensesData.Update(DetainID, IsReleased, ReleaseDate,
-                                  CreatedByUser.UserID, ReleaseApplication.ApplicationID);
+            float paidFees = clsApplicationTypes.Find(5).Fee;
+
+            int personID = License.Driver.Person.PersonID;
+            if (clsDetainedLicensesData.ReleaseDetainedLicense(DetainID, releasedByUserID, personID,
+                                                               paidFees, out int releaseApplicationID))
+            {
+                ReleaseApplication = clsApplication.Find(releaseApplicationID);
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
 
         public bool Save()
@@ -99,7 +110,7 @@ namespace BusinessLayer.Drivers___Licenses
             switch (Mode)
             {
                 case enMode.AddNew:
-                    if (_AddNew())
+                    if (_NewDetain())
                     {
                         Mode = enMode.Update;
                         return true;
@@ -110,7 +121,7 @@ namespace BusinessLayer.Drivers___Licenses
                     }
 
                 case enMode.Update:
-                    return _Update();
+                    return false;
 
                 default:
                     return false;

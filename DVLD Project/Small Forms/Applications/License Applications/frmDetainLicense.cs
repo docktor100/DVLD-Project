@@ -114,6 +114,12 @@ namespace DVLD_Project.Small_Forms.Applications.License_Applications
         }
         private void btnDetain_Click(object sender, EventArgs e)
         {
+            if (string.IsNullOrEmpty(mbFineFees.Text.Trim()))
+            {
+                MessageBox.Show("You must declare the fine amount", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
             if (!IsSure())
             {
                 return;
@@ -125,7 +131,7 @@ namespace DVLD_Project.Small_Forms.Applications.License_Applications
             {
                 DeactivateLicense();
 
-                MessageBox.Show("License detain saved successfully", "Information",
+                MessageBox.Show("License detained successfully", "Information",
                     MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                 lblDetainID.Text = LicenseDetainInfo.DetainID.ToString();
@@ -137,7 +143,7 @@ namespace DVLD_Project.Small_Forms.Applications.License_Applications
             }
             else
             {
-                MessageBox.Show("Failed to save license detain", "Error",
+                MessageBox.Show("Failed to detain the license", "Error",
                    MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 

@@ -149,9 +149,9 @@ namespace DVLD_Project.Small_Forms.Applications.License_Applications
             this.label14.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.Location = new System.Drawing.Point(10, 30);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(138, 16);
+            this.label14.Size = new System.Drawing.Size(84, 16);
             this.label14.TabIndex = 130;
-            this.label14.Text = "Detain PersonID :";
+            this.label14.Text = "Detain ID:";
             // 
             // label7
             // 
@@ -230,9 +230,9 @@ namespace DVLD_Project.Small_Forms.Applications.License_Applications
             this.label5.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(457, 30);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(197, 16);
+            this.label5.Size = new System.Drawing.Size(143, 16);
             this.label5.TabIndex = 172;
-            this.label5.Text = "R. Application PersonID :";
+            this.label5.Text = "R. Application ID:";
             // 
             // lblTotalFees
             // 
@@ -381,7 +381,7 @@ namespace DVLD_Project.Small_Forms.Applications.License_Applications
             this.ctrFindLicense1.Name = "ctrFindLicense1";
             this.ctrFindLicense1.Size = new System.Drawing.Size(820, 389);
             this.ctrFindLicense1.TabIndex = 137;
-            this.ctrFindLicense1.OnSearch += new System.Action<clsLicenses>(this.ctrFindLicense1_OnSearch);
+            this.ctrFindLicense1.OnSearch += new System.Action<BusinessLayer.Licenses.clsLicenses>(this.ctrFindLicense1_OnSearch);
             // 
             // frmReleaseDetainedLicense
             // 

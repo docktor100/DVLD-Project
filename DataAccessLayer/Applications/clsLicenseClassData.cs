@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DataAccessLayer.Tests;
+using System;
 using System.Data.SqlClient;
 
 namespace DataAccessLayer.Applications
@@ -44,7 +45,7 @@ namespace DataAccessLayer.Applications
             catch (Exception ex)
             {
 
-                //Console.WriteLine(ex.Message);
+                clsEventLog.LogError(ex.Message);
                 isfound = false;
             }
             finally

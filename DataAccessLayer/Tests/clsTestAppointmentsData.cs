@@ -50,7 +50,7 @@ namespace DataAccessLayer.Tests
             catch (Exception ex)
             {
 
-                //Console.WriteLine(ex.Message);
+                clsEventLog.LogError(ex.Message);
                 isfound = false;
             }
             finally
@@ -89,7 +89,7 @@ namespace DataAccessLayer.Tests
             catch (Exception ex)
             {
 
-                Console.WriteLine(ex.Message);
+                clsEventLog.LogError(ex.Message);
             }
             finally
             {
@@ -127,7 +127,7 @@ namespace DataAccessLayer.Tests
             catch (Exception ex)
             {
 
-                Console.WriteLine(ex.Message);
+                clsEventLog.LogError(ex.Message);
             }
             finally
             {
@@ -164,7 +164,7 @@ namespace DataAccessLayer.Tests
             catch (Exception ex)
             {
 
-                Console.WriteLine(ex.Message);
+                clsEventLog.LogError(ex.Message);
             }
             finally
             {
@@ -215,6 +215,7 @@ namespace DataAccessLayer.Tests
             }
             catch (Exception ex)
             {
+                clsEventLog.LogError(ex.Message);
                 ID = -1;
             }
             finally
@@ -245,7 +246,7 @@ namespace DataAccessLayer.Tests
             catch (Exception ex)
             {
 
-                Console.WriteLine(ex.Message);
+                clsEventLog.LogError(ex.Message);
             }
             finally
             {

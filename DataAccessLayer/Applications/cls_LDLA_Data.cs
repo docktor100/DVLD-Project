@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DataAccessLayer.Tests;
+using System;
 using System.Data;
 using System.Data.SqlClient;
 
@@ -40,7 +41,7 @@ namespace DataAccessLayer.Specific
             catch (Exception ex)
             {
 
-                //Console.WriteLine(ex.Message);
+                clsEventLog.LogError(ex.Message);
                 isfound = false;
             }
             finally
@@ -81,7 +82,7 @@ namespace DataAccessLayer.Specific
             catch (Exception ex)
             {
 
-                //Console.WriteLine(ex.Message);
+                clsEventLog.LogError(ex.Message);
                 isfound = false;
             }
             finally
@@ -120,7 +121,7 @@ namespace DataAccessLayer.Specific
             catch (Exception ex)
             {
 
-                Console.WriteLine(ex.Message);
+                clsEventLog.LogError(ex.Message);
             }
             finally
             {
@@ -154,7 +155,7 @@ namespace DataAccessLayer.Specific
             catch (Exception ex)
             {
 
-                Console.WriteLine(ex.Message);
+                clsEventLog.LogError(ex.Message);
             }
             finally
             {
@@ -184,7 +185,7 @@ namespace DataAccessLayer.Specific
             catch (Exception ex)
             {
 
-                Console.WriteLine(ex.Message);
+                clsEventLog.LogError(ex.Message);
             }
             finally
             {
@@ -237,7 +238,7 @@ namespace DataAccessLayer.Specific
             catch (Exception ex)
             {
 
-                Console.WriteLine(ex.Message);
+                clsEventLog.LogError(ex.Message);
                 IsDeleted = false;
             }
             finally
@@ -279,6 +280,7 @@ namespace DataAccessLayer.Specific
             }
             catch (Exception ex)
             {
+                clsEventLog.LogError(ex.Message);
                 ID = -1;
             }
             finally

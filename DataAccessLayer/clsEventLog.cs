@@ -25,8 +25,7 @@ namespace DataAccessLayer.Tests
             }
             catch
             {
-                // Handle any exceptions that may occur while writing to the event log
-                // For example, you could log to a file or ignore the error
+
             }
         }
     }

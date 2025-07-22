@@ -54,7 +54,7 @@
     <Compile Include="Drivers &amp; Licenses\clsLicensesData.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Applications\cls_LDLA_Data.cs" />
-    <Compile Include="Tests\clsEventLog.cs" />
+    <Compile Include="clsEventLog.cs" />
     <Compile Include="Tests\clsTestsData.cs" />
     <Compile Include="Tests\clsTestTypesData.cs" />
     <Compile Include="Tests\clsTestAppointmentsData.cs" />

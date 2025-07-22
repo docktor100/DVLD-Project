@@ -1,8 +1,11 @@
 ﻿using BusinessLayer;
 using DVLD_Project.Global;
+using Microsoft.Win32;
 using System;
-using System.IO;
+using System.Configuration;
+using System.Diagnostics;
 using System.Windows.Forms;
+
 
 namespace DVLD_Project.Small_Forms
 {
@@ -10,7 +13,7 @@ namespace DVLD_Project.Small_Forms
     {
         public bool IsSignIn = false;
 
-        string filepath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "LastLoginInfo.txt");
+        //string filepath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "LastLoginInfo.txt"); the old method
 
         public frmLogin()
         {
@@ -20,17 +23,20 @@ namespace DVLD_Project.Small_Forms
 
         private void frmLogin_Load(object sender, EventArgs e)
         {
-            string Content = File.ReadAllText(filepath);
-            if (!string.IsNullOrWhiteSpace(Content))
+            if (!GetLogInInfoFromWinowsRegistry(out string userName, out string password))
             {
-                string[] arrContent = Content.Split(new[] { "#//#" }, StringSplitOptions.None);
-                tbUserName.Text = arrContent[0].Trim();
-                mbPassowrd.Text = arrContent[1].Trim();
-                checkBox1.Checked = true;
-
-                btnLogin.Focus();
+                tbUserName.Focus();
+                return;
             }
+;
+
+            tbUserName.Text = userName;
+            mbPassowrd.Text = password;
+
+            checkBox1.Checked = true;
+            btnLogin.Focus();
         }
+
 
         private bool AreBoxesEmpty()
         {
@@ -83,7 +89,6 @@ namespace DVLD_Project.Small_Forms
             if (mbPassowrd.Text == clsGlobal.CurrentUser.Password)
             {
                 RememberLastUser(checkBox1.Checked);
-                this.DialogResult = DialogResult.OK;
                 IsSignIn = true;
 
                 this.Close();
@@ -94,22 +99,112 @@ namespace DVLD_Project.Small_Forms
         {
             if (!IsRememberMe)
             {
-                if (File.Exists(filepath))
+                if (!DeleteLogInInfoFromWinodwsRegistry())
                 {
-                    File.WriteAllText(filepath, "");
+                    MessageBox.Show("Failed to delete last login info", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
                 return;
             }
 
-
-            string[] Content = { tbUserName.Text, mbPassowrd.Text };
-            string UserName_Passoword = string.Join("#//#", Content);
-
-            if (File.Exists(filepath))
+            if (!WriteLogInInfoToWindowsRegistry(tbUserName.Text.Trim(), mbPassowrd.Text.Trim()))
             {
-                File.WriteAllText(filepath, UserName_Passoword);
+                MessageBox.Show("Failed to save login info", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
+        private bool DeleteLogInInfoFromWinodwsRegistry()
+        {
+            string KeyName = ConfigurationManager.AppSettings["LogInInfo_RegistryKeyName"];
+            string ValueName = ConfigurationManager.AppSettings["LogInInfo_RegistryValueName"];
+
+            try
+            {
+                Registry.CurrentUser.DeleteSubKey(KeyName.Substring("HKEY_CURRENT_USER/".Length));
+
+                return true;
+            }
+            catch (Exception ex)
+            {
+                LogError(ex.Message);
+                return false;
+            }
+        }
+        private bool WriteLogInInfoToWindowsRegistry(string UserName, string Password)
+        {
+            string KeyName = ConfigurationManager.AppSettings["LogInInfo_RegistryKeyName"];
+            string ValueName = ConfigurationManager.AppSettings["LogInInfo_RegistryValueName"];
+
+
+            try
+            {
+                string Value = UserName + "#//#" + Password;
+
+                Registry.SetValue(KeyName, ValueName, Value, RegistryValueKind.String);
+
+                return true;
+            }
+            catch (Exception ex)
+            {
+                LogError(ex.Message);
+
+                return false;
+            }
+
+        }
+        private bool GetLogInInfoFromWinowsRegistry(out string UserName, out string Password)
+        {
+            UserName = null;
+            Password = null;
+
+            string KeyName = ConfigurationManager.AppSettings["LogInInfo_RegistryKeyName"];
+            string ValueName = ConfigurationManager.AppSettings["LogInInfo_RegistryValueName"];
+
+            try
+            {
+                string Value = Registry.GetValue(KeyName, ValueName, null) as string;
+
+                if (Value == null)
+                {
+                    return false;
+                }
+
+                string[] arr = Value.Split(new string[] { "#//#" }, StringSplitOptions.None);
+
+                UserName = arr[0];
+                Password = arr[1];
+                return true;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Failed to get login info", "Error",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+                LogError(ex.Message);
+
+                return false;
+            }
+        }
+
+
+        private void LogError(string Message, string SourceName = "DVLD_Project")
+        {
+            if (string.IsNullOrEmpty(Message))
+                return;
+
+            try
+            {
+                if (EventLog.SourceExists(SourceName))
+                {
+                    EventLog.CreateEventSource(SourceName, "Application");
+                }
+
+                // Write the error message to the event log
+                EventLog.WriteEntry(SourceName, Message, EventLogEntryType.Error);
+            }
+            catch
+            {
+
+            }
+        }
     }
 }

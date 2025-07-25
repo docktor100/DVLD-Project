@@ -2,7 +2,7 @@
 
 ## 📘 About the Project
 
-This is an **educational project** developed independently using **C# Windows Forms** on the **.NET Framework**. The **UI design and database schema** were taken from the learning platform, while all logic and implementation were built from scratch.
+This is an **educational project** developed independently using **C# Windows Forms** on the **.NET Framework**. The **UI design and database** were taken from the learning platform, while all logic and implementation were built from scratch.
 
 The application simulates a real-world **Drivers and Vehicles Licenses Department**, providing a range of features for managing applicants, users, and license-related services.
 

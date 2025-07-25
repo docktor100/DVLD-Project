@@ -64,6 +64,27 @@ Additional features include:
 
 ---
 
+## ▶️ Getting Started
+
+1. Clone the repository:  
+   ```bash
+   git clone https://github.com/your-username/your-repo-name.git
+
+2. **Restore the database**   
+   Restore the `DVLD.bak` database file (included in the `/Database` folder) to your local SQL Server instance.
+
+3. **Configure the connection string**   
+   Open the `App.config` file and update the connection string with your SQL Server credentials:  
+   ```xml
+   <appSettings>
+       <add key="DB_ConnectionString" value="Server=YOUR_SERVER_NAME;Database=DVLD;User Id=YOUR_USER;Password=YOUR_PASSWORD" />
+   </appSettings>
+4. **Open the solution**   
+   Open the `.sln` file in Visual Studio 2022 or later.  
+   Ensure the **.NET desktop development** workload is installed.  
+   If not, open the Visual Studio Installer, choose **Modify**, and select the **.NET desktop development** workload.
+
+
 ## 📝 Notes
 
 This project was developed as part of a self-learning journey to practice and demonstrate real-world application structure, database connectivity, and desktop UI development.

@@ -26,15 +26,30 @@ The application simulates a real-world **Drivers and Vehicles Licenses Departmen
 <img width="4855" height="3521" alt="DVLD Database" src="https://github.com/user-attachments/assets/b6c3fb04-b061-4085-b0d4-7997348b860a" />
 
 ---
-
 ## 🧪 Basic Walkthrough
 
-1. Add a new person to the system  
-2. Apply for a new local driving license and choose the rank  
-3. Set appointments and complete the three required tests  
-4. Issue the new local license  
+1. **Add a new person to the system**  
+   - Go to `People → Add New`.  
+   - Fill in the details and click **Save**.  
 
-Additional features include:
+2. **Apply for a new local driving license**  
+   - Navigate to `Application Types → Driving License Services → New Driving License → Local Driving License`.  
+   - Choose a person.  
+   - From the second tab page, select the **license class**.  
+
+3. **Take the required tests for license issuance**  
+   - Go to `Application Types → Manage Applications → Local Driving License Applications`.  
+   - Select the desired application, right-click, and choose **Schedule Tests**.  
+   - Click the **Add Appointment** button in the upper-right corner of the data grid view.  
+   - Choose the date and save the appointment.  
+   - Right-click on the appointment and take the test.  
+   - Repeat the process until all required tests are completed.  
+
+4. **Issue the new local license**  
+   - Right-click the application and choose `Issue License → Issue`.  
+
+
+## **Additional features include:**
 
 - Global license issuance  
 - Replacement for lost or damaged licenses  
@@ -50,7 +65,7 @@ Additional features include:
 - Built using a **3-tier architecture** (Presentation, Business Logic, Data Access)  
 - Reusability through **custom UserControls**  
 - Fully integrated with the database using **ADO.NET**  
-- Built with **SOLID and clean OOP principles**  
+- Built with **strong and clean OOP principles**  
 - Includes a basic **sign-in / sign-out system**
 
 ---
@@ -85,6 +100,6 @@ Additional features include:
    If not, open the Visual Studio Installer, choose **Modify**, and select the **.NET desktop development** workload.
 
 
-## 📝 Notes
+## 📝 Note
 
-This project was developed as part of a self-learning journey to practice and demonstrate real-world application structure, database connectivity, and desktop UI development.
+This project was developed as part of a self-learning journey to practice and demonstrate real-world application structure, database connectivity, and desktop UI development. It’s not perfect and can definitely be further optimized and enhanced, but that’s part of the fun — there’s plenty of room for improvement and experimentation.

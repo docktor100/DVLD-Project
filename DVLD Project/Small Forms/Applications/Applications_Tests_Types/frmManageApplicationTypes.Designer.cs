@@ -76,9 +76,9 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pbPersonImage.Image")));
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(200, 12);
-            this.pictureBox1.Name = "pbPersonImage";
+            this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(182, 136);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 1;
@@ -88,8 +88,8 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Mongolian Baiti", 18F, System.Drawing.FontStyle.Bold);
-            this.label6.ForeColor = System.Drawing.Color.Red;
-            this.label6.Location = new System.Drawing.Point(142, 174);
+            this.label6.ForeColor = System.Drawing.Color.DarkRed;
+            this.label6.Location = new System.Drawing.Point(142, 169);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(297, 25);
             this.label6.TabIndex = 86;
@@ -100,7 +100,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Mongolian Baiti", 11F, System.Drawing.FontStyle.Bold);
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(12, 440);
+            this.label1.Location = new System.Drawing.Point(12, 405);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(84, 16);
             this.label1.TabIndex = 87;
@@ -111,7 +111,7 @@
             this.lblRecords.AutoSize = true;
             this.lblRecords.Font = new System.Drawing.Font("Mongolian Baiti", 11F, System.Drawing.FontStyle.Bold);
             this.lblRecords.ForeColor = System.Drawing.Color.Black;
-            this.lblRecords.Location = new System.Drawing.Point(89, 440);
+            this.lblRecords.Location = new System.Drawing.Point(89, 405);
             this.lblRecords.Name = "lblRecords";
             this.lblRecords.Size = new System.Drawing.Size(0, 16);
             this.lblRecords.TabIndex = 88;
@@ -121,7 +121,7 @@
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(406, 431);
+            this.button1.Location = new System.Drawing.Point(428, 405);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(113, 36);
             this.button1.TabIndex = 89;
@@ -133,15 +133,17 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(552, 479);
+            this.ClientSize = new System.Drawing.Size(552, 450);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.lblRecords);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.dataGridView1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "frmManageApplicationTypes";
-            this.Text = "frmManageApplicationTypes";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Manage Application Types";
             this.Load += new System.EventHandler(this.frmManageApplicationTypes_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.contextMenuStrip1.ResumeLayout(false);

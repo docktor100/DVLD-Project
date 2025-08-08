@@ -1,5 +1,6 @@
 ﻿using BusinessLayer.Tests;
 using DVLD_Project.Global;
+using DVLD_Project.Properties;
 using System;
 using System.Windows.Forms;
 
@@ -11,6 +12,7 @@ namespace DVLD_Project.Small_Forms.Applications.Tests
         clsTests Test;
         int Trial;
         public bool IsPassed { get; set; } = false;
+        public bool DoUpdateDataGridView { get; set; } = false;
 
         public frmTakeTest(int testAppointmentID, int trial)
         {
@@ -20,6 +22,35 @@ namespace DVLD_Project.Small_Forms.Applications.Tests
         }
 
 
+        private void SetTitle()
+        {
+
+            switch (TestAppointment.TestType.TestTypeID)
+            {
+                case 1:
+                    this.Text = "Vision Test";
+                    lblTitle.Text = "Vision Test";
+                    pbTitle.Image = Resources.Vision_512;
+                    break;
+
+                case 2:
+                    this.Text = "Written Test";
+                    lblTitle.Text = "Written Test";
+                    pbTitle.Image = Resources.Written_Test_512;
+                    break;
+
+                case 3:
+                    this.Text = "Driving Test";
+                    lblTitle.Text = "Driving Test";
+                    pbTitle.Image = Resources.driving_test_512;
+                    break;
+
+                default:
+                    pbTitle.Image = null;
+                    lblTitle.Text = "";
+                    break;
+            }
+        }
         private void FillFormInfo()
         {
             lbl_LDLA_ID.Text = TestAppointment.LDLA.LDLA_ID.ToString();
@@ -29,6 +60,8 @@ namespace DVLD_Project.Small_Forms.Applications.Tests
             lblTrial.Text = Trial.ToString();
             dateTimePicker1.Text = TestAppointment.Date.ToShortDateString();
             dateTimePicker1.Enabled = false;
+
+            SetTitle();
         }
         private void frmTakeTest_Load(object sender, EventArgs e)
         {
@@ -40,7 +73,7 @@ namespace DVLD_Project.Small_Forms.Applications.Tests
             Test = new clsTests();
 
             Test.TestResult = radioButton1.Checked;
-            Test.Notes = textBox1.Text.Trim();
+            Test.Notes = tbNotes.Text.Trim();
             Test.TestApointment = TestAppointment;
             Test.User = clsGlobal.CurrentUser;
 
@@ -58,6 +91,7 @@ namespace DVLD_Project.Small_Forms.Applications.Tests
                     if (Test.TestResult == true)
                         IsPassed = true;
 
+                    DoUpdateDataGridView = true;
                     this.Close();
                 }
                 else
@@ -70,14 +104,6 @@ namespace DVLD_Project.Small_Forms.Applications.Tests
         private void btnCancel_Click(object sender, EventArgs e)
         {
             this.Close();
-        }
-
-        private void frmTakeTest_FormClosing(object sender, FormClosingEventArgs e)
-        {
-            if (Test == null) //if no saving done, do not update the grid view outside
-            {
-                this.DialogResult = DialogResult.Cancel;
-            }
         }
     }
 }

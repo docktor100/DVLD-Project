@@ -35,6 +35,7 @@
             this.btnClose = new System.Windows.Forms.Button();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tcPersonalInfo = new System.Windows.Forms.TabPage();
+            this.ctrFindPerson1 = new DVLD_Project.User_Controls.ctrFindPerson();
             this.btnNext = new System.Windows.Forms.Button();
             this.tcUserInfo = new System.Windows.Forms.TabPage();
             this.btnSave = new System.Windows.Forms.Button();
@@ -52,7 +53,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.ctrFindPerson1 = new DVLD_Project.User_Controls.ctrFindPerson();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.tabControl1.SuspendLayout();
             this.tcPersonalInfo.SuspendLayout();
@@ -71,8 +71,8 @@
             // 
             this.lbl_Update_Addnew_Subject.AutoSize = true;
             this.lbl_Update_Addnew_Subject.Font = new System.Drawing.Font("Mongolian Baiti", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_Update_Addnew_Subject.ForeColor = System.Drawing.Color.Red;
-            this.lbl_Update_Addnew_Subject.Location = new System.Drawing.Point(282, 28);
+            this.lbl_Update_Addnew_Subject.ForeColor = System.Drawing.Color.DarkRed;
+            this.lbl_Update_Addnew_Subject.Location = new System.Drawing.Point(265, 37);
             this.lbl_Update_Addnew_Subject.Name = "lbl_Update_Addnew_Subject";
             this.lbl_Update_Addnew_Subject.Size = new System.Drawing.Size(208, 31);
             this.lbl_Update_Addnew_Subject.TabIndex = 35;
@@ -83,7 +83,7 @@
             this.btnClose.Font = new System.Drawing.Font("Mongolian Baiti", 11F);
             this.btnClose.Image = ((System.Drawing.Image)(resources.GetObject("btnClose.Image")));
             this.btnClose.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnClose.Location = new System.Drawing.Point(589, 599);
+            this.btnClose.Location = new System.Drawing.Point(596, 580);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(114, 39);
             this.btnClose.TabIndex = 36;
@@ -104,6 +104,7 @@
             // 
             // tcPersonalInfo
             // 
+            this.tcPersonalInfo.BackColor = System.Drawing.SystemColors.Control;
             this.tcPersonalInfo.Controls.Add(this.ctrFindPerson1);
             this.tcPersonalInfo.Controls.Add(this.btnNext);
             this.tcPersonalInfo.Location = new System.Drawing.Point(4, 22);
@@ -112,7 +113,17 @@
             this.tcPersonalInfo.Size = new System.Drawing.Size(698, 477);
             this.tcPersonalInfo.TabIndex = 0;
             this.tcPersonalInfo.Text = "Personal Info";
-            this.tcPersonalInfo.UseVisualStyleBackColor = true;
+            // 
+            // ctrFindPerson1
+            // 
+            this.ctrFindPerson1.FilterEnabled = true;
+            this.ctrFindPerson1.Location = new System.Drawing.Point(1, 13);
+            this.ctrFindPerson1.Name = "ctrFindPerson1";
+            this.ctrFindPerson1.PersonID = 0;
+            this.ctrFindPerson1.ShowAddPerson = true;
+            this.ctrFindPerson1.Size = new System.Drawing.Size(692, 412);
+            this.ctrFindPerson1.TabIndex = 1;
+            this.ctrFindPerson1.OnPersonSelected += new System.Action<int>(this.ctrFindPerson1_OnPersonSelected);
             // 
             // btnNext
             // 
@@ -129,6 +140,7 @@
             // 
             // tcUserInfo
             // 
+            this.tcUserInfo.BackColor = System.Drawing.SystemColors.Control;
             this.tcUserInfo.Controls.Add(this.btnSave);
             this.tcUserInfo.Controls.Add(this.btnPrev);
             this.tcUserInfo.Controls.Add(this.mbConfirmPassword);
@@ -150,7 +162,6 @@
             this.tcUserInfo.Size = new System.Drawing.Size(698, 477);
             this.tcUserInfo.TabIndex = 1;
             this.tcUserInfo.Text = "User Info";
-            this.tcUserInfo.UseVisualStyleBackColor = true;
             // 
             // btnSave
             // 
@@ -258,6 +269,7 @@
             // 
             // pictureBox1
             // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(195, 90);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(20, 20);
@@ -279,9 +291,9 @@
             this.label1.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(35, 50);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(124, 16);
+            this.label1.Size = new System.Drawing.Size(75, 16);
             this.label1.TabIndex = 75;
-            this.label1.Text = "User PersonID: ";
+            this.label1.Text = "User ID: ";
             // 
             // pictureBox5
             // 
@@ -303,30 +315,18 @@
             this.label6.TabIndex = 46;
             this.label6.Text = "User Name: ";
             // 
-            // ctrFindPerson1
-            // 
-            this.ctrFindPerson1.FilterEnabled = true;
-            this.ctrFindPerson1.Location = new System.Drawing.Point(1, 13);
-            this.ctrFindPerson1.Name = "ctrFindPerson1";
-            this.ctrFindPerson1.PersonID = 0;
-            this.ctrFindPerson1.ShowAddPerson = true;
-            this.ctrFindPerson1.Size = new System.Drawing.Size(692, 412);
-            this.ctrFindPerson1.TabIndex = 1;
-            this.ctrFindPerson1.OnPersonSelected += new System.Action<int>(this.ctrFindPerson1_OnPersonSelected);
-            // 
             // frm_UpdateAddNewUser
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(723, 645);
+            this.ClientSize = new System.Drawing.Size(723, 631);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.lbl_Update_Addnew_Subject);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "frm_UpdateAddNewUser";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frmAddNewUser";
+            this.Text = "Add New User";
             this.Load += new System.EventHandler(this.frmAddNewUser_Load);
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.tabControl1.ResumeLayout(false);

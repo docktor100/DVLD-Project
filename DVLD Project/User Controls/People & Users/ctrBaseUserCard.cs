@@ -36,6 +36,5 @@ namespace DVLD_Project.User_Controls
                 ResetForm();
             }
         }
-
     }
 }

@@ -51,7 +51,7 @@
             // 
             // mbNewPassword
             // 
-            this.mbNewPassword.Location = new System.Drawing.Point(220, 482);
+            this.mbNewPassword.Location = new System.Drawing.Point(207, 471);
             this.mbNewPassword.Name = "mbNewPassword";
             this.mbNewPassword.PasswordChar = '*';
             this.mbNewPassword.Size = new System.Drawing.Size(103, 20);
@@ -59,7 +59,7 @@
             // 
             // mbCurrentPassword
             // 
-            this.mbCurrentPassword.Location = new System.Drawing.Point(220, 444);
+            this.mbCurrentPassword.Location = new System.Drawing.Point(207, 433);
             this.mbCurrentPassword.Name = "mbCurrentPassword";
             this.mbCurrentPassword.PasswordChar = '*';
             this.mbCurrentPassword.Size = new System.Drawing.Size(103, 20);
@@ -69,7 +69,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Bold);
-            this.label3.Location = new System.Drawing.Point(34, 482);
+            this.label3.Location = new System.Drawing.Point(21, 471);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(125, 16);
             this.label3.TabIndex = 90;
@@ -79,7 +79,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Bold);
-            this.label2.Location = new System.Drawing.Point(34, 444);
+            this.label2.Location = new System.Drawing.Point(21, 433);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(146, 16);
             this.label2.TabIndex = 88;
@@ -88,7 +88,7 @@
             // pictureBox3
             // 
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(194, 481);
+            this.pictureBox3.Location = new System.Drawing.Point(181, 470);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(20, 20);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -98,7 +98,7 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(194, 443);
+            this.pictureBox2.Location = new System.Drawing.Point(181, 432);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(20, 20);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -107,7 +107,7 @@
             // 
             // mbConfirmPassword
             // 
-            this.mbConfirmPassword.Location = new System.Drawing.Point(220, 520);
+            this.mbConfirmPassword.Location = new System.Drawing.Point(207, 509);
             this.mbConfirmPassword.Name = "mbConfirmPassword";
             this.mbConfirmPassword.PasswordChar = '*';
             this.mbConfirmPassword.Size = new System.Drawing.Size(103, 20);
@@ -116,7 +116,7 @@
             // pictureBox4
             // 
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(194, 519);
+            this.pictureBox4.Location = new System.Drawing.Point(181, 508);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(20, 20);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -127,7 +127,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Bold);
-            this.label4.Location = new System.Drawing.Point(34, 520);
+            this.label4.Location = new System.Drawing.Point(21, 509);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(151, 16);
             this.label4.TabIndex = 94;
@@ -138,7 +138,7 @@
             this.btnClose.Font = new System.Drawing.Font("Mongolian Baiti", 11F);
             this.btnClose.Image = ((System.Drawing.Image)(resources.GetObject("btnClose.Image")));
             this.btnClose.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnClose.Location = new System.Drawing.Point(486, 568);
+            this.btnClose.Location = new System.Drawing.Point(450, 555);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(114, 39);
             this.btnClose.TabIndex = 99;
@@ -151,7 +151,7 @@
             this.btnSave.Font = new System.Drawing.Font("Mongolian Baiti", 11F);
             this.btnSave.Image = ((System.Drawing.Image)(resources.GetObject("btnSave.Image")));
             this.btnSave.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnSave.Location = new System.Drawing.Point(619, 568);
+            this.btnSave.Location = new System.Drawing.Point(583, 555);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(114, 39);
             this.btnSave.TabIndex = 100;
@@ -163,7 +163,7 @@
             // 
             this.ctrBaseUserCard1.Location = new System.Drawing.Point(12, 3);
             this.ctrBaseUserCard1.Name = "ctrBaseUserCard1";
-            this.ctrBaseUserCard1.Size = new System.Drawing.Size(727, 435);
+            this.ctrBaseUserCard1.Size = new System.Drawing.Size(685, 404);
             this.ctrBaseUserCard1.TabIndex = 0;
             // 
             // errorProvider1
@@ -174,7 +174,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(745, 619);
+            this.ClientSize = new System.Drawing.Size(708, 605);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.mbConfirmPassword);
@@ -187,8 +187,10 @@
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.ctrBaseUserCard1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "frmChangeUserPassword";
-            this.Text = "frmChangeUserPassword";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Change User Password";
             this.Load += new System.EventHandler(this.frmChangeUserPassword_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();

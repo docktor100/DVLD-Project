@@ -60,8 +60,10 @@
             this.ClientSize = new System.Drawing.Size(815, 322);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.ctrInternationalLicenseInfo1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "frm_I_LicenseInfo";
-            this.Text = "frmShow_IDL";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "International License";
             this.Load += new System.EventHandler(this.frmShow_IDL_Load);
             this.ResumeLayout(false);
 

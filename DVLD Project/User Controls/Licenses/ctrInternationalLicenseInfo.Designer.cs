@@ -163,7 +163,7 @@
             // pictureBox13
             // 
             this.pictureBox13.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox13.Image")));
-            this.pictureBox13.Location = new System.Drawing.Point(116, 67);
+            this.pictureBox13.Location = new System.Drawing.Point(116, 64);
             this.pictureBox13.Name = "pictureBox13";
             this.pictureBox13.Size = new System.Drawing.Size(23, 23);
             this.pictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -228,13 +228,13 @@
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(126, 16);
             this.label17.TabIndex = 119;
-            this.label17.Text = "Application PersonID :";
+            this.label17.Text = "Application ID :";
             // 
             // lblGendor
             // 
             this.lblGendor.AutoSize = true;
             this.lblGendor.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblGendor.Location = new System.Drawing.Point(150, 171);
+            this.lblGendor.Location = new System.Drawing.Point(150, 168);
             this.lblGendor.Name = "lblGendor";
             this.lblGendor.Size = new System.Drawing.Size(43, 16);
             this.lblGendor.TabIndex = 112;
@@ -264,7 +264,7 @@
             // 
             this.lblIssueDate.AutoSize = true;
             this.lblIssueDate.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblIssueDate.Location = new System.Drawing.Point(150, 205);
+            this.lblIssueDate.Location = new System.Drawing.Point(150, 202);
             this.lblIssueDate.Name = "lblIssueDate";
             this.lblIssueDate.Size = new System.Drawing.Size(43, 16);
             this.lblIssueDate.TabIndex = 109;
@@ -284,7 +284,7 @@
             // 
             this.lblNationalNo.AutoSize = true;
             this.lblNationalNo.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNationalNo.Location = new System.Drawing.Point(150, 137);
+            this.lblNationalNo.Location = new System.Drawing.Point(150, 134);
             this.lblNationalNo.Name = "lblNationalNo";
             this.lblNationalNo.Size = new System.Drawing.Size(43, 16);
             this.lblNationalNo.TabIndex = 107;
@@ -294,7 +294,7 @@
             // 
             this.lbl_L_LicenseID.AutoSize = true;
             this.lbl_L_LicenseID.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_L_LicenseID.Location = new System.Drawing.Point(150, 103);
+            this.lbl_L_LicenseID.Location = new System.Drawing.Point(150, 100);
             this.lbl_L_LicenseID.Name = "lbl_L_LicenseID";
             this.lbl_L_LicenseID.Size = new System.Drawing.Size(43, 16);
             this.lbl_L_LicenseID.TabIndex = 106;
@@ -305,7 +305,7 @@
             this.lblName.AutoSize = true;
             this.lblName.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblName.ForeColor = System.Drawing.Color.Red;
-            this.lblName.Location = new System.Drawing.Point(150, 35);
+            this.lblName.Location = new System.Drawing.Point(150, 32);
             this.lblName.Name = "lblName";
             this.lblName.Size = new System.Drawing.Size(43, 16);
             this.lblName.TabIndex = 105;
@@ -315,7 +315,7 @@
             // 
             this.lbl_I_LicenseID.AutoSize = true;
             this.lbl_I_LicenseID.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_I_LicenseID.Location = new System.Drawing.Point(150, 70);
+            this.lbl_I_LicenseID.Location = new System.Drawing.Point(150, 67);
             this.lbl_I_LicenseID.Name = "lbl_I_LicenseID";
             this.lbl_I_LicenseID.Size = new System.Drawing.Size(43, 16);
             this.lbl_I_LicenseID.TabIndex = 104;
@@ -324,7 +324,7 @@
             // pictureBox7
             // 
             this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
-            this.pictureBox7.Location = new System.Drawing.Point(116, 168);
+            this.pictureBox7.Location = new System.Drawing.Point(116, 165);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(23, 23);
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -354,7 +354,7 @@
             // pictureBox6
             // 
             this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
-            this.pictureBox6.Location = new System.Drawing.Point(116, 202);
+            this.pictureBox6.Location = new System.Drawing.Point(116, 199);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(23, 23);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -364,7 +364,7 @@
             // pictureBox4
             // 
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(116, 134);
+            this.pictureBox4.Location = new System.Drawing.Point(116, 131);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(23, 23);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -374,7 +374,7 @@
             // pictureBox5
             // 
             this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(116, 100);
+            this.pictureBox5.Location = new System.Drawing.Point(116, 97);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(23, 23);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -394,7 +394,7 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(116, 32);
+            this.pictureBox2.Location = new System.Drawing.Point(116, 29);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(23, 23);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -439,7 +439,7 @@
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(108, 16);
             this.label14.TabIndex = 92;
-            this.label14.Text = "I.License PersonID :";
+            this.label14.Text = "I.License ID :";
             // 
             // label12
             // 
@@ -459,7 +459,7 @@
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(88, 16);
             this.label8.TabIndex = 90;
-            this.label8.Text = "Driver PersonID :";
+            this.label8.Text = "Driver ID :";
             // 
             // label7
             // 
@@ -479,7 +479,7 @@
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(113, 16);
             this.label6.TabIndex = 88;
-            this.label6.Text = "L.License PersonID :";
+            this.label6.Text = "L.License ID :";
             // 
             // label1
             // 

@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmAddNewTestAppointment));
-            this.gbRetakeTestInfo = new System.Windows.Forms.GroupBox();
+            this.gbTestAppointmentInfo = new System.Windows.Forms.GroupBox();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.lblTitle = new System.Windows.Forms.Label();
             this.pbTitle = new System.Windows.Forms.PictureBox();
@@ -62,7 +62,7 @@
             this.label5 = new System.Windows.Forms.Label();
             this.btnSave = new System.Windows.Forms.Button();
             this.btnClose = new System.Windows.Forms.Button();
-            this.gbRetakeTestInfo.SuspendLayout();
+            this.gbTestAppointmentInfo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbTitle)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
@@ -76,34 +76,34 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
-            // gbRetakeTestInfo
+            // gbTestAppointmentInfo
             // 
-            this.gbRetakeTestInfo.Controls.Add(this.dateTimePicker1);
-            this.gbRetakeTestInfo.Controls.Add(this.lblTitle);
-            this.gbRetakeTestInfo.Controls.Add(this.pbTitle);
-            this.gbRetakeTestInfo.Controls.Add(this.lblFees);
-            this.gbRetakeTestInfo.Controls.Add(this.pictureBox1);
-            this.gbRetakeTestInfo.Controls.Add(this.label2);
-            this.gbRetakeTestInfo.Controls.Add(this.lblTrial);
-            this.gbRetakeTestInfo.Controls.Add(this.pictureBox11);
-            this.gbRetakeTestInfo.Controls.Add(this.pictureBox10);
-            this.gbRetakeTestInfo.Controls.Add(this.lblName);
-            this.gbRetakeTestInfo.Controls.Add(this.pictureBox9);
-            this.gbRetakeTestInfo.Controls.Add(this.lbl_DL_Class);
-            this.gbRetakeTestInfo.Controls.Add(this.pictureBox8);
-            this.gbRetakeTestInfo.Controls.Add(this.label13);
-            this.gbRetakeTestInfo.Controls.Add(this.label12);
-            this.gbRetakeTestInfo.Controls.Add(this.label11);
-            this.gbRetakeTestInfo.Controls.Add(this.label10);
-            this.gbRetakeTestInfo.Controls.Add(this.lbl_LDLA_ID);
-            this.gbRetakeTestInfo.Controls.Add(this.pictureBox6);
-            this.gbRetakeTestInfo.Controls.Add(this.label9);
-            this.gbRetakeTestInfo.Location = new System.Drawing.Point(12, 12);
-            this.gbRetakeTestInfo.Name = "gbRetakeTestInfo";
-            this.gbRetakeTestInfo.Size = new System.Drawing.Size(442, 369);
-            this.gbRetakeTestInfo.TabIndex = 0;
-            this.gbRetakeTestInfo.TabStop = false;
-            this.gbRetakeTestInfo.Text = "groupBox1";
+            this.gbTestAppointmentInfo.Controls.Add(this.dateTimePicker1);
+            this.gbTestAppointmentInfo.Controls.Add(this.lblTitle);
+            this.gbTestAppointmentInfo.Controls.Add(this.pbTitle);
+            this.gbTestAppointmentInfo.Controls.Add(this.lblFees);
+            this.gbTestAppointmentInfo.Controls.Add(this.pictureBox1);
+            this.gbTestAppointmentInfo.Controls.Add(this.label2);
+            this.gbTestAppointmentInfo.Controls.Add(this.lblTrial);
+            this.gbTestAppointmentInfo.Controls.Add(this.pictureBox11);
+            this.gbTestAppointmentInfo.Controls.Add(this.pictureBox10);
+            this.gbTestAppointmentInfo.Controls.Add(this.lblName);
+            this.gbTestAppointmentInfo.Controls.Add(this.pictureBox9);
+            this.gbTestAppointmentInfo.Controls.Add(this.lbl_DL_Class);
+            this.gbTestAppointmentInfo.Controls.Add(this.pictureBox8);
+            this.gbTestAppointmentInfo.Controls.Add(this.label13);
+            this.gbTestAppointmentInfo.Controls.Add(this.label12);
+            this.gbTestAppointmentInfo.Controls.Add(this.label11);
+            this.gbTestAppointmentInfo.Controls.Add(this.label10);
+            this.gbTestAppointmentInfo.Controls.Add(this.lbl_LDLA_ID);
+            this.gbTestAppointmentInfo.Controls.Add(this.pictureBox6);
+            this.gbTestAppointmentInfo.Controls.Add(this.label9);
+            this.gbTestAppointmentInfo.Location = new System.Drawing.Point(12, 12);
+            this.gbTestAppointmentInfo.Name = "gbTestAppointmentInfo";
+            this.gbTestAppointmentInfo.Size = new System.Drawing.Size(442, 369);
+            this.gbTestAppointmentInfo.TabIndex = 0;
+            this.gbTestAppointmentInfo.TabStop = false;
+            this.gbTestAppointmentInfo.Text = "groupBox1";
             // 
             // dateTimePicker1
             // 
@@ -462,14 +462,14 @@
             this.Controls.Add(this.gb_RT_App_Info);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.btnClose);
-            this.Controls.Add(this.gbRetakeTestInfo);
+            this.Controls.Add(this.gbTestAppointmentInfo);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "frmAddNewTestAppointment";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Schedule test";
             this.Load += new System.EventHandler(this.frmAddNewTestAppointment_Load);
-            this.gbRetakeTestInfo.ResumeLayout(false);
-            this.gbRetakeTestInfo.PerformLayout();
+            this.gbTestAppointmentInfo.ResumeLayout(false);
+            this.gbTestAppointmentInfo.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbTitle)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
@@ -488,7 +488,7 @@
 
         #endregion
 
-        private System.Windows.Forms.GroupBox gbRetakeTestInfo;
+        private System.Windows.Forms.GroupBox gbTestAppointmentInfo;
         private System.Windows.Forms.Label lblTrial;
         private System.Windows.Forms.PictureBox pictureBox11;
         private System.Windows.Forms.PictureBox pictureBox10;

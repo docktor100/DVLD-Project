@@ -122,9 +122,9 @@
             this.label14.Font = new System.Drawing.Font("Mongolian Baiti", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.Location = new System.Drawing.Point(6, 32);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(119, 14);
+            this.label14.Size = new System.Drawing.Size(73, 14);
             this.label14.TabIndex = 60;
-            this.label14.Text = "Person PersonID :";
+            this.label14.Text = "PersonID :";
             // 
             // btnClose
             // 

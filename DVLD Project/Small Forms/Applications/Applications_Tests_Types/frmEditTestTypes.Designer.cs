@@ -35,7 +35,6 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
             this.btnClose = new System.Windows.Forms.Button();
             this.btnSave = new System.Windows.Forms.Button();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
@@ -50,7 +49,7 @@
             // 
             // mbFees
             // 
-            this.mbFees.Location = new System.Drawing.Point(172, 233);
+            this.mbFees.Location = new System.Drawing.Point(154, 194);
             this.mbFees.Mask = "00000";
             this.mbFees.Name = "mbFees";
             this.mbFees.PromptChar = ' ';
@@ -60,7 +59,7 @@
             // 
             // tbTitle
             // 
-            this.tbTitle.Location = new System.Drawing.Point(174, 113);
+            this.tbTitle.Location = new System.Drawing.Point(156, 74);
             this.tbTitle.Name = "tbTitle";
             this.tbTitle.Size = new System.Drawing.Size(288, 20);
             this.tbTitle.TabIndex = 111;
@@ -69,7 +68,7 @@
             // 
             this.lblTestTypeID.AutoSize = true;
             this.lblTestTypeID.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTestTypeID.Location = new System.Drawing.Point(171, 75);
+            this.lblTestTypeID.Location = new System.Drawing.Point(153, 37);
             this.lblTestTypeID.Name = "lblTestTypeID";
             this.lblTestTypeID.Size = new System.Drawing.Size(43, 16);
             this.lblTestTypeID.TabIndex = 110;
@@ -79,7 +78,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(30, 232);
+            this.label7.Location = new System.Drawing.Point(12, 193);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(46, 16);
             this.label7.TabIndex = 106;
@@ -89,7 +88,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(30, 119);
+            this.label1.Location = new System.Drawing.Point(12, 80);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(51, 16);
             this.label1.TabIndex = 105;
@@ -99,29 +98,18 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(30, 77);
+            this.label2.Location = new System.Drawing.Point(12, 38);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(36, 16);
+            this.label2.Size = new System.Drawing.Size(109, 16);
             this.label2.TabIndex = 104;
-            this.label2.Text = "PersonID: ";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Mongolian Baiti", 14F, System.Drawing.FontStyle.Bold);
-            this.label6.ForeColor = System.Drawing.Color.Red;
-            this.label6.Location = new System.Drawing.Point(76, 16);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(267, 20);
-            this.label6.TabIndex = 103;
-            this.label6.Text = "Edit Application Type Details";
+            this.label2.Text = "Test Type ID:";
             // 
             // btnClose
             // 
             this.btnClose.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnClose.Image = ((System.Drawing.Image)(resources.GetObject("btnClose.Image")));
             this.btnClose.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnClose.Location = new System.Drawing.Point(271, 299);
+            this.btnClose.Location = new System.Drawing.Point(215, 260);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(113, 36);
             this.btnClose.TabIndex = 114;
@@ -133,7 +121,7 @@
             this.btnSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSave.Image = ((System.Drawing.Image)(resources.GetObject("btnSave.Image")));
             this.btnSave.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSave.Location = new System.Drawing.Point(390, 299);
+            this.btnSave.Location = new System.Drawing.Point(334, 260);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(113, 36);
             this.btnSave.TabIndex = 113;
@@ -144,7 +132,7 @@
             // pictureBox4
             // 
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(132, 229);
+            this.pictureBox4.Location = new System.Drawing.Point(114, 190);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(28, 26);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -154,7 +142,7 @@
             // pictureBox5
             // 
             this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(132, 109);
+            this.pictureBox5.Location = new System.Drawing.Point(114, 70);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(28, 26);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -163,7 +151,7 @@
             // 
             // tbDescription
             // 
-            this.tbDescription.Location = new System.Drawing.Point(174, 150);
+            this.tbDescription.Location = new System.Drawing.Point(156, 111);
             this.tbDescription.Multiline = true;
             this.tbDescription.Name = "tbDescription";
             this.tbDescription.Size = new System.Drawing.Size(288, 67);
@@ -171,9 +159,9 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pbPersonImage.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(132, 150);
-            this.pictureBox1.Name = "pbPersonImage";
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(114, 111);
+            this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(28, 26);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 116;
@@ -183,7 +171,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(30, 156);
+            this.label3.Location = new System.Drawing.Point(12, 117);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(94, 16);
             this.label3.TabIndex = 115;
@@ -193,7 +181,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(515, 347);
+            this.ClientSize = new System.Drawing.Size(459, 308);
             this.Controls.Add(this.tbDescription);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label3);
@@ -207,9 +195,10 @@
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.label6);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "frmEditTestTypes";
-            this.Text = "frmEditTestTypes";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Edit Test Type";
             this.Load += new System.EventHandler(this.frmEditTestTypes_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
@@ -231,7 +220,6 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox tbDescription;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label3;

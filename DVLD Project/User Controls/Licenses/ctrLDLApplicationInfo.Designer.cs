@@ -226,7 +226,7 @@
             this.groupBox2.Size = new System.Drawing.Size(755, 213);
             this.groupBox2.TabIndex = 53;
             this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Application Basic Info";
+            this.groupBox2.Text = "Basic Application Info";
             // 
             // linkLabel1
             // 

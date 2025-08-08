@@ -74,7 +74,7 @@ namespace DVLD_Project.Small_Forms
                     lbl_R_App_ID.Text = TestAppointment.RetaketestApplication.ApplicationID.ToString();
                 }
                 else
-                    gbRetakeTestInfo.Enabled = false;
+                    gb_RT_App_Info.Enabled = false;
 
 
                 if (TestAppointment.IsLocked)
@@ -91,25 +91,25 @@ namespace DVLD_Project.Small_Forms
             {
                 case 1:
                     this.Text = "Vision Test";
-                    gbRetakeTestInfo.Text = "Vision Test";
+                    gbTestAppointmentInfo.Text = "Vision Test";
                     pbTitle.Image = Resources.Vision_512;
                     break;
 
                 case 2:
                     this.Text = "Written Test";
-                    gbRetakeTestInfo.Text = "Written Test";
+                    gbTestAppointmentInfo.Text = "Written Test";
                     pbTitle.Image = Resources.Written_Test_512;
                     break;
 
                 case 3:
                     this.Text = "Driving Test";
-                    gbRetakeTestInfo.Text = "Driving Test";
+                    gbTestAppointmentInfo.Text = "Driving Test";
                     pbTitle.Image = Resources.driving_test_512;
                     break;
 
                 default:
                     pbTitle.Image = null;
-                    gbRetakeTestInfo.Text = "";
+                    gbTestAppointmentInfo.Text = "";
                     break;
             }
         }
@@ -190,7 +190,6 @@ namespace DVLD_Project.Small_Forms
             {
                 MessageBox.Show("Failed to save data", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            this.DialogResult = DialogResult.OK;
             DoUpdateGridView = true;
             this.Close();
         }

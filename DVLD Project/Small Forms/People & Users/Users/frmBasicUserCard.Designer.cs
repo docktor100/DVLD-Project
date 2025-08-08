@@ -38,7 +38,7 @@
             this.btnClose.Font = new System.Drawing.Font("Mongolian Baiti", 11F);
             this.btnClose.Image = ((System.Drawing.Image)(resources.GetObject("btnClose.Image")));
             this.btnClose.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnClose.Location = new System.Drawing.Point(592, 413);
+            this.btnClose.Location = new System.Drawing.Point(574, 413);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(114, 39);
             this.btnClose.TabIndex = 37;
@@ -48,9 +48,9 @@
             // 
             // ctrBaseUserCard1
             // 
-            this.ctrBaseUserCard1.Location = new System.Drawing.Point(0, -10);
+            this.ctrBaseUserCard1.Location = new System.Drawing.Point(-1, 1);
             this.ctrBaseUserCard1.Name = "ctrBaseUserCard1";
-            this.ctrBaseUserCard1.Size = new System.Drawing.Size(727, 435);
+            this.ctrBaseUserCard1.Size = new System.Drawing.Size(693, 406);
             this.ctrBaseUserCard1.TabIndex = 0;
             this.ctrBaseUserCard1.Load += new System.EventHandler(this.ctrBaseUserCard1_Load);
             // 
@@ -58,7 +58,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(718, 462);
+            this.ClientSize = new System.Drawing.Size(692, 462);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.ctrBaseUserCard1);
             this.Name = "frmBasicUserCard";

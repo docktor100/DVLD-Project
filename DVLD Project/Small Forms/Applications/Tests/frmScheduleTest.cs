@@ -118,8 +118,9 @@ namespace DVLD_Project.Small_Forms.Applications
             }
 
             frmAddNewTestAppointment frm = new frmAddNewTestAppointment(LDLA, TestType, DT.Rows.Count);
+            frm.ShowDialog();
 
-            if (frm.ShowDialog() == DialogResult.OK) // when save is pressed, else close is pressed
+            if (frm.DoUpdateGridView) // when save is pressed, else close is pressed
             {
                 FillDataGridView();
                 SetIfPassed();
@@ -136,7 +137,9 @@ namespace DVLD_Project.Small_Forms.Applications
 
             frmAddNewTestAppointment frm = new frmAddNewTestAppointment(testAppID, Trials);
 
-            if (frm.ShowDialog() == DialogResult.OK) // OK after saving any changes
+            frm.ShowDialog();
+
+            if (frm.DoUpdateGridView)
                 FillDataGridView();
         }
         private void takeTestToolStripMenuItem_Click(object sender, EventArgs e)
@@ -145,8 +148,9 @@ namespace DVLD_Project.Small_Forms.Applications
             clsTestAppointments testApp = clsTestAppointments.Find(testAppID);
 
             frmTakeTest frm = new frmTakeTest(testAppID, DT.Rows.Count);
+            frm.ShowDialog();
 
-            if (frm.ShowDialog() == DialogResult.Cancel)// no saving done
+            if (!frm.DoUpdateDataGridView)// no saving done
             {
                 return;
             }
@@ -158,10 +162,6 @@ namespace DVLD_Project.Small_Forms.Applications
             {
                 SetIfPassed();
                 DoUpdate_LDLA_List = true; // to update the number of passed tests in the gridview
-            }
-            else
-            {
-                DoUpdate_LDLA_List = false;
             }
         }
 

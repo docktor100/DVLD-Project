@@ -128,9 +128,9 @@ namespace DVLD_Project.Small_Forms.Applications
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pbPersonImage.Image")));
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(593, 87);
-            this.pictureBox1.Name = "pbPersonImage";
+            this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(23, 23);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 112;
@@ -227,7 +227,7 @@ namespace DVLD_Project.Small_Forms.Applications
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(143, 16);
             this.label11.TabIndex = 103;
-            this.label11.Text = "Local License PersonID :";
+            this.label11.Text = "Local License ID :";
             // 
             // label12
             // 
@@ -237,7 +237,7 @@ namespace DVLD_Project.Small_Forms.Applications
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(129, 16);
             this.label12.TabIndex = 102;
-            this.label12.Text = "I.L.License  PersonID :";
+            this.label12.Text = "I.L.License  ID :";
             // 
             // lblIssueDate
             // 
@@ -351,7 +351,7 @@ namespace DVLD_Project.Small_Forms.Applications
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(153, 16);
             this.label6.TabIndex = 90;
-            this.label6.Text = "I.L.Application PersonID :";
+            this.label6.Text = "I.L.Application ID :";
             // 
             // llblShowLicenseHistory
             // 
@@ -411,7 +411,7 @@ namespace DVLD_Project.Small_Forms.Applications
             this.ctrFindLicense1.Name = "ctrFindLicense1";
             this.ctrFindLicense1.Size = new System.Drawing.Size(821, 389);
             this.ctrFindLicense1.TabIndex = 0;
-            this.ctrFindLicense1.OnSearch += new System.Action<clsLicenses>(this.ctrFindLicense1_OnSearch);
+            this.ctrFindLicense1.OnSearch += new System.Action<BusinessLayer.Licenses.clsLicenses>(this.ctrFindLicense1_OnSearch);
             // 
             // frmIssueInternationalLicense
             // 
@@ -424,8 +424,10 @@ namespace DVLD_Project.Small_Forms.Applications
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.ctrFindLicense1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "frmIssueInternationalLicense";
-            this.Text = "frmIssueInternationalLicense";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Issue International License";
             this.Load += new System.EventHandler(this.frmIssueInternationalLicense_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
             this.groupBox1.ResumeLayout(false);

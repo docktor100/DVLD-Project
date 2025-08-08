@@ -160,16 +160,18 @@
             // localDrivingLicenseApplicationsToolStripMenuItem
             // 
             this.localDrivingLicenseApplicationsToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("localDrivingLicenseApplicationsToolStripMenuItem.Image")));
+            this.localDrivingLicenseApplicationsToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.localDrivingLicenseApplicationsToolStripMenuItem.Name = "localDrivingLicenseApplicationsToolStripMenuItem";
-            this.localDrivingLicenseApplicationsToolStripMenuItem.Size = new System.Drawing.Size(254, 22);
+            this.localDrivingLicenseApplicationsToolStripMenuItem.Size = new System.Drawing.Size(270, 38);
             this.localDrivingLicenseApplicationsToolStripMenuItem.Text = "Local Driving License Applications";
             this.localDrivingLicenseApplicationsToolStripMenuItem.Click += new System.EventHandler(this.ManagelocalDrivingLicenseApplicationsToolStripMenuItem_Click);
             // 
             // internToolStripMenuItem
             // 
             this.internToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("internToolStripMenuItem.Image")));
+            this.internToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.internToolStripMenuItem.Name = "internToolStripMenuItem";
-            this.internToolStripMenuItem.Size = new System.Drawing.Size(254, 22);
+            this.internToolStripMenuItem.Size = new System.Drawing.Size(270, 38);
             this.internToolStripMenuItem.Text = "International License Applications";
             this.internToolStripMenuItem.Click += new System.EventHandler(this.internToolStripMenuItem_Click);
             // 

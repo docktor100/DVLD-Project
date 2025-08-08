@@ -52,6 +52,7 @@
             this.btnAddNew = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.btnClose = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.contextMenuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -270,19 +271,33 @@
             // label1
             // 
             this.label1.Font = new System.Drawing.Font("Mongolian Baiti", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Red;
-            this.label1.Location = new System.Drawing.Point(197, 119);
+            this.label1.ForeColor = System.Drawing.Color.DarkRed;
+            this.label1.Location = new System.Drawing.Point(12, 119);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(193, 33);
+            this.label1.Size = new System.Drawing.Size(553, 33);
             this.label1.TabIndex = 46;
             this.label1.Text = "Manage Users";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // btnClose
+            // 
+            this.btnClose.Font = new System.Drawing.Font("Mongolian Baiti", 11F);
+            this.btnClose.Image = ((System.Drawing.Image)(resources.GetObject("btnClose.Image")));
+            this.btnClose.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnClose.Location = new System.Drawing.Point(437, 385);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(114, 39);
+            this.btnClose.TabIndex = 47;
+            this.btnClose.Text = "Close";
+            this.btnClose.UseVisualStyleBackColor = true;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // frmUsersList
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(571, 405);
+            this.ClientSize = new System.Drawing.Size(565, 440);
+            this.Controls.Add(this.btnClose);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnAddNew);
             this.Controls.Add(this.cbIsActive);
@@ -330,5 +345,6 @@
         private System.Windows.Forms.ToolStripMenuItem changePasswordToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnClose;
     }
 }

@@ -51,22 +51,22 @@
             // 
             // lblTitle
             // 
-            this.lblTitle.AutoSize = true;
             this.lblTitle.Font = new System.Drawing.Font("Mongolian Baiti", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitle.ForeColor = System.Drawing.Color.Red;
-            this.lblTitle.Location = new System.Drawing.Point(268, 90);
+            this.lblTitle.Location = new System.Drawing.Point(1, 113);
             this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(331, 29);
+            this.lblTitle.Size = new System.Drawing.Size(789, 29);
             this.lblTitle.TabIndex = 46;
             this.lblTitle.Text = "Vision Test Appointments";
+            this.lblTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pbTitle
             // 
             this.pbTitle.BackColor = System.Drawing.Color.Transparent;
             this.pbTitle.Image = ((System.Drawing.Image)(resources.GetObject("pbTitle.Image")));
-            this.pbTitle.Location = new System.Drawing.Point(362, 8);
+            this.pbTitle.Location = new System.Drawing.Point(328, 10);
             this.pbTitle.Name = "pbTitle";
-            this.pbTitle.Size = new System.Drawing.Size(109, 84);
+            this.pbTitle.Size = new System.Drawing.Size(129, 100);
             this.pbTitle.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbTitle.TabIndex = 47;
             this.pbTitle.TabStop = false;
@@ -76,7 +76,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Mongolian Baiti", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(14, 482);
+            this.label2.Location = new System.Drawing.Point(14, 511);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(112, 16);
             this.label2.TabIndex = 48;
@@ -89,7 +89,7 @@
             this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.ContextMenuStrip = this.contextMenuStrip1;
-            this.dataGridView1.Location = new System.Drawing.Point(17, 504);
+            this.dataGridView1.Location = new System.Drawing.Point(17, 533);
             this.dataGridView1.MultiSelect = false;
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
@@ -103,7 +103,7 @@
             this.editToolStripMenuItem,
             this.takeTestToolStripMenuItem});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(181, 70);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(121, 48);
             this.contextMenuStrip1.Opening += new System.ComponentModel.CancelEventHandler(this.contextMenuStrip1_Opening);
             // 
             // editToolStripMenuItem
@@ -126,7 +126,7 @@
             // 
             this.lblRecords.AutoSize = true;
             this.lblRecords.Font = new System.Drawing.Font("Mongolian Baiti", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRecords.Location = new System.Drawing.Point(101, 636);
+            this.lblRecords.Location = new System.Drawing.Point(101, 665);
             this.lblRecords.Name = "lblRecords";
             this.lblRecords.Size = new System.Drawing.Size(0, 15);
             this.lblRecords.TabIndex = 53;
@@ -135,7 +135,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Mongolian Baiti", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(23, 636);
+            this.label4.Location = new System.Drawing.Point(23, 665);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(77, 15);
             this.label4.TabIndex = 52;
@@ -148,7 +148,7 @@
             this.btnAddNewAppointment.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnAddNewAppointment.FlatAppearance.BorderSize = 0;
             this.btnAddNewAppointment.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnAddNewAppointment.Location = new System.Drawing.Point(473, 466);
+            this.btnAddNewAppointment.Location = new System.Drawing.Point(473, 495);
             this.btnAddNewAppointment.Name = "btnAddNewAppointment";
             this.btnAddNewAppointment.Size = new System.Drawing.Size(35, 35);
             this.btnAddNewAppointment.TabIndex = 54;
@@ -159,7 +159,7 @@
             // 
             this.pbIsPassed.BackColor = System.Drawing.Color.Transparent;
             this.pbIsPassed.Image = ((System.Drawing.Image)(resources.GetObject("pbIsPassed.Image")));
-            this.pbIsPassed.Location = new System.Drawing.Point(609, 504);
+            this.pbIsPassed.Location = new System.Drawing.Point(609, 533);
             this.pbIsPassed.Name = "pbIsPassed";
             this.pbIsPassed.Size = new System.Drawing.Size(108, 83);
             this.pbIsPassed.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -172,7 +172,7 @@
             this.lblPassed.AutoSize = true;
             this.lblPassed.Font = new System.Drawing.Font("Mongolian Baiti", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPassed.ForeColor = System.Drawing.Color.DarkGreen;
-            this.lblPassed.Location = new System.Drawing.Point(617, 600);
+            this.lblPassed.Location = new System.Drawing.Point(617, 629);
             this.lblPassed.Name = "lblPassed";
             this.lblPassed.Size = new System.Drawing.Size(94, 29);
             this.lblPassed.TabIndex = 57;
@@ -181,7 +181,7 @@
             // 
             // ctr_LDL_ApplicationInfo1
             // 
-            this.ctr_LDL_ApplicationInfo1.Location = new System.Drawing.Point(17, 118);
+            this.ctr_LDL_ApplicationInfo1.Location = new System.Drawing.Point(17, 147);
             this.ctr_LDL_ApplicationInfo1.Name = "ctr_LDL_ApplicationInfo1";
             this.ctr_LDL_ApplicationInfo1.Size = new System.Drawing.Size(761, 348);
             this.ctr_LDL_ApplicationInfo1.TabIndex = 0;
@@ -190,7 +190,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(790, 660);
+            this.ClientSize = new System.Drawing.Size(790, 688);
             this.Controls.Add(this.lblPassed);
             this.Controls.Add(this.pbIsPassed);
             this.Controls.Add(this.btnAddNewAppointment);

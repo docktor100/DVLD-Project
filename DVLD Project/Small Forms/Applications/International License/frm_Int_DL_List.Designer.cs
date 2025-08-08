@@ -38,6 +38,12 @@
             this.label1 = new System.Windows.Forms.Label();
             this.cbFilterBy = new System.Windows.Forms.ComboBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.showToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmShowLicense = new System.Windows.Forms.ToolStripMenuItem();
+            this.showPersonsLicenseHistoryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnAddNewPerson = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.LocalDrivingLicenseApplicationID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ClassName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.NationalNo = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -45,12 +51,6 @@
             this.applicationDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.PassedTestCount = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Status = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.showToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.tsmShowLicense = new System.Windows.Forms.ToolStripMenuItem();
-            this.showPersonsLicenseHistoryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.btnAddNewPerson = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.contextMenuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -158,52 +158,6 @@
             this.dataGridView1.Size = new System.Drawing.Size(794, 227);
             this.dataGridView1.TabIndex = 54;
             // 
-            // LocalDrivingLicenseApplicationID
-            // 
-            this.LocalDrivingLicenseApplicationID.HeaderText = "int. License PersonID";
-            this.LocalDrivingLicenseApplicationID.Name = "LocalDrivingLicenseApplicationID";
-            this.LocalDrivingLicenseApplicationID.ReadOnly = true;
-            // 
-            // ClassName
-            // 
-            this.ClassName.HeaderText = "Application PersonID";
-            this.ClassName.Name = "ClassName";
-            this.ClassName.ReadOnly = true;
-            // 
-            // NationalNo
-            // 
-            this.NationalNo.HeaderText = "Driver PersonID";
-            this.NationalNo.Name = "NationalNo";
-            this.NationalNo.ReadOnly = true;
-            this.NationalNo.Width = 90;
-            // 
-            // FullName
-            // 
-            this.FullName.HeaderText = "L. License PersonID";
-            this.FullName.Name = "FullName";
-            this.FullName.ReadOnly = true;
-            // 
-            // applicationDate
-            // 
-            this.applicationDate.HeaderText = "Issue Date";
-            this.applicationDate.Name = "applicationDate";
-            this.applicationDate.ReadOnly = true;
-            this.applicationDate.Width = 130;
-            // 
-            // PassedTestCount
-            // 
-            this.PassedTestCount.HeaderText = "Expiration Date";
-            this.PassedTestCount.Name = "PassedTestCount";
-            this.PassedTestCount.ReadOnly = true;
-            this.PassedTestCount.Width = 130;
-            // 
-            // Status
-            // 
-            this.Status.HeaderText = "Is Active";
-            this.Status.Name = "Status";
-            this.Status.ReadOnly = true;
-            this.Status.Width = 80;
-            // 
             // contextMenuStrip1
             // 
             this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -211,7 +165,7 @@
             this.tsmShowLicense,
             this.showPersonsLicenseHistoryToolStripMenuItem});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(250, 140);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(250, 118);
             // 
             // showToolStripMenuItem
             // 
@@ -250,16 +204,62 @@
             this.btnAddNewPerson.Size = new System.Drawing.Size(51, 54);
             this.btnAddNewPerson.TabIndex = 56;
             this.btnAddNewPerson.UseVisualStyleBackColor = true;
+            this.btnAddNewPerson.Click += new System.EventHandler(this.btnAddNewPerson_Click);
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pbPersonImage.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(365, 12);
-            this.pictureBox1.Name = "pbPersonImage";
+            this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(124, 115);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 58;
             this.pictureBox1.TabStop = false;
+            // 
+            // LocalDrivingLicenseApplicationID
+            // 
+            this.LocalDrivingLicenseApplicationID.HeaderText = "int. License ID";
+            this.LocalDrivingLicenseApplicationID.Name = "LocalDrivingLicenseApplicationID";
+            this.LocalDrivingLicenseApplicationID.ReadOnly = true;
+            // 
+            // ClassName
+            // 
+            this.ClassName.HeaderText = "Application ID";
+            this.ClassName.Name = "ClassName";
+            this.ClassName.ReadOnly = true;
+            // 
+            // NationalNo
+            // 
+            this.NationalNo.HeaderText = "Driver ID";
+            this.NationalNo.Name = "NationalNo";
+            this.NationalNo.ReadOnly = true;
+            this.NationalNo.Width = 90;
+            // 
+            // FullName
+            // 
+            this.FullName.HeaderText = "L. License ID";
+            this.FullName.Name = "FullName";
+            this.FullName.ReadOnly = true;
+            // 
+            // applicationDate
+            // 
+            this.applicationDate.HeaderText = "Issue Date";
+            this.applicationDate.Name = "applicationDate";
+            this.applicationDate.ReadOnly = true;
+            this.applicationDate.Width = 130;
+            // 
+            // PassedTestCount
+            // 
+            this.PassedTestCount.HeaderText = "Expiration Date";
+            this.PassedTestCount.Name = "PassedTestCount";
+            this.PassedTestCount.ReadOnly = true;
+            this.PassedTestCount.Width = 130;
+            // 
+            // Status
+            // 
+            this.Status.HeaderText = "Is Active";
+            this.Status.Name = "Status";
+            this.Status.ReadOnly = true;
+            this.Status.Width = 80;
             // 
             // frm_Int_DL_List
             // 
@@ -276,8 +276,10 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.cbFilterBy);
             this.Controls.Add(this.dataGridView1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "frm_Int_DL_List";
-            this.Text = "frm_Int_DL_List";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "International Licenses";
             this.Load += new System.EventHandler(this.frm_Int_DL_List_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.contextMenuStrip1.ResumeLayout(false);

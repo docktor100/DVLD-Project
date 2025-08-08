@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmTakeTest));
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.tbNotes = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
@@ -71,13 +71,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             this.SuspendLayout();
             // 
-            // textBox1
+            // tbNotes
             // 
-            this.textBox1.Location = new System.Drawing.Point(12, 463);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(443, 84);
-            this.textBox1.TabIndex = 104;
+            this.tbNotes.Location = new System.Drawing.Point(12, 463);
+            this.tbNotes.Multiline = true;
+            this.tbNotes.Name = "tbNotes";
+            this.tbNotes.Size = new System.Drawing.Size(443, 84);
+            this.tbNotes.TabIndex = 104;
             // 
             // label3
             // 
@@ -170,7 +170,7 @@
             this.groupBox1.Size = new System.Drawing.Size(442, 369);
             this.groupBox1.TabIndex = 106;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "groupBox1";
+            this.groupBox1.Text = "Test Appointment Information";
             // 
             // dateTimePicker1
             // 
@@ -182,18 +182,18 @@
             // 
             // lblTitle
             // 
-            this.lblTitle.AutoSize = true;
             this.lblTitle.Font = new System.Drawing.Font("Mongolian Baiti", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitle.ForeColor = System.Drawing.Color.Black;
-            this.lblTitle.Location = new System.Drawing.Point(144, 116);
+            this.lblTitle.Location = new System.Drawing.Point(9, 116);
             this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(62, 25);
+            this.lblTitle.Size = new System.Drawing.Size(427, 25);
             this.lblTitle.TabIndex = 90;
             this.lblTitle.Text = "Title";
+            this.lblTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pbTitle
             // 
-            this.pbTitle.Location = new System.Drawing.Point(169, 19);
+            this.pbTitle.Location = new System.Drawing.Point(165, 19);
             this.pbTitle.Name = "pbTitle";
             this.pbTitle.Size = new System.Drawing.Size(115, 81);
             this.pbTitle.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -213,6 +213,7 @@
             // 
             // pictureBox1
             // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(131, 338);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(23, 23);
@@ -376,9 +377,9 @@
             this.label9.ForeColor = System.Drawing.Color.Black;
             this.label9.Location = new System.Drawing.Point(6, 160);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(151, 15);
+            this.label9.Size = new System.Drawing.Size(107, 15);
             this.label9.TabIndex = 69;
-            this.label9.Text = "LDL App. PersonID: ";
+            this.label9.Text = "LDL App. ID: ";
             // 
             // btnSave
             // 
@@ -415,7 +416,7 @@
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.pictureBox5);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.tbNotes);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.radioButton2);
             this.Controls.Add(this.radioButton1);
@@ -425,7 +426,6 @@
             this.Name = "frmTakeTest";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Take Test";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmTakeTest_FormClosing);
             this.Load += new System.EventHandler(this.frmTakeTest_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
@@ -446,7 +446,7 @@
         #endregion
 
         private System.Windows.Forms.PictureBox pictureBox5;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox tbNotes;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.RadioButton radioButton2;
         private System.Windows.Forms.RadioButton radioButton1;

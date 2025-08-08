@@ -190,5 +190,9 @@ namespace DVLD_Project.Small_Forms
             FillDataGridView(_DT.DefaultView.ToTable());
         }
 
+        private void btnClose_Click(object sender, System.EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

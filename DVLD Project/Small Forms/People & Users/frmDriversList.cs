@@ -1,4 +1,5 @@
 ﻿using BusinessLayer.Drivers___Licenses;
+using DVLD_Project.Small_Forms.Applications.Local_Driving_License_Applications;
 using System;
 using System.Data;
 using System.Windows.Forms;
@@ -80,6 +81,20 @@ namespace DVLD_Project.Small_Forms.People___Users
                 mbFilter.Mask = "";
             }
 
+        }
+
+        private void showToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            string nationalNo = dataGridView1.CurrentRow.Cells[2].Value.ToString();
+            frmPersonsLicenseHistory frm = new frmPersonsLicenseHistory(nationalNo);
+            frm.ShowDialog();
+        }
+
+        private void toolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            string nationalNo = dataGridView1.CurrentRow.Cells[2].Value.ToString();
+            frmPersonDetails frm = new frmPersonDetails(nationalNo);
+            frm.ShowDialog();
         }
     }
 }

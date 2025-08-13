@@ -147,7 +147,7 @@ namespace DVLD_Project.Small_Forms
 
             DialogResult result = MessageBox.Show($"Are You Sure You Want To Delete User {userName}?", "Delete User", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
 
-            if (result == DialogResult.No)
+            if (result != DialogResult.Yes)
             {
                 return;
             }

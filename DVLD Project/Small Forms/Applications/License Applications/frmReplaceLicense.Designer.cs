@@ -174,9 +174,9 @@ namespace DVLD_Project.Small_Forms.Applications.License_Applications
             this.label11.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.Location = new System.Drawing.Point(420, 61);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(178, 16);
+            this.label11.Size = new System.Drawing.Size(129, 16);
             this.label11.TabIndex = 103;
-            this.label11.Text = "Old License PersonID :";
+            this.label11.Text = "Old License ID :";
             // 
             // label12
             // 
@@ -184,9 +184,9 @@ namespace DVLD_Project.Small_Forms.Applications.License_Applications
             this.label12.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.Location = new System.Drawing.Point(420, 31);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(218, 16);
+            this.label12.Size = new System.Drawing.Size(169, 16);
             this.label12.TabIndex = 102;
-            this.label12.Text = "Replaced License PersonID :";
+            this.label12.Text = "Replaced License ID :";
             // 
             // btnClose
             // 
@@ -290,9 +290,9 @@ namespace DVLD_Project.Small_Forms.Applications.License_Applications
             this.label6.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(19, 31);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(208, 16);
+            this.label6.Size = new System.Drawing.Size(159, 16);
             this.label6.TabIndex = 90;
-            this.label6.Text = "L.R.Application PersonID :";
+            this.label6.Text = "L.R.Application ID :";
             // 
             // llblShowLicenseHistory
             // 
@@ -376,7 +376,7 @@ namespace DVLD_Project.Small_Forms.Applications.License_Applications
             this.ctrFindLicense1.Name = "ctrFindLicense1";
             this.ctrFindLicense1.Size = new System.Drawing.Size(820, 381);
             this.ctrFindLicense1.TabIndex = 41;
-            this.ctrFindLicense1.OnSearch += new System.Action<clsLicenses>(this.ctrFindLicense1_OnSearch);
+            this.ctrFindLicense1.OnSearch += new System.Action<BusinessLayer.Licenses.clsLicenses>(this.ctrFindLicense1_OnSearch);
             // 
             // frmReplaceLicense
             // 

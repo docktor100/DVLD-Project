@@ -144,21 +144,21 @@ namespace DVLD_Project
             }
 
 
-            DialogResult Result = MessageBox.Show($"Are You Sure You Want to Delete Person With PersonID = {currentPersonID} ?", ""
+            DialogResult Result = MessageBox.Show($"Are You Sure You Want to Delete Person With ID = {currentPersonID} ?", ""
                                                     , MessageBoxButtons.YesNo);
 
-            if (Result == DialogResult.No)
+            if (Result != DialogResult.OK)
             {
                 return;
             }
 
-
+            string ImageName = clsPerson.Find(currentPersonID).ImageName;
             if (clsPerson.DeletePerson(currentPersonID))
             {
                 MessageBox.Show("Person Deleted Successfully");
                 LoadLDLAListToGrid();
 
-                DeletePersonImage(clsPerson.Find(currentPersonID).ImageName);
+                DeletePersonImage(ImageName);
             }
             else
             {

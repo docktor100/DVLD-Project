@@ -148,7 +148,7 @@ namespace DVLD_Project.Small_Forms.Applications
         {
             if (I_License.Save())
             {
-                MessageBox.Show($"License Saved Successfully with PersonID = {I_License.I_LicenseID}",
+                MessageBox.Show($"License Saved Successfully with ID = {I_License.I_LicenseID}",
                                 "Save", MessageBoxButtons.OK);
 
                 lbl_IL_LicenseID.Text = I_License.I_LicenseID.ToString();
@@ -165,7 +165,7 @@ namespace DVLD_Project.Small_Forms.Applications
 
                 if (!clsApplication.Delete(applicationID))
                 {
-                    MessageBox.Show($"Failed to delete the application of the process, with PersonID = {applicationID}",
+                    MessageBox.Show($"Failed to delete the application of the process, with ID = {applicationID}",
                                "Save", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
 

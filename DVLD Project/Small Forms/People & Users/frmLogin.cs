@@ -18,7 +18,6 @@ namespace DVLD_Project.Small_Forms
         public frmLogin()
         {
             InitializeComponent();
-            this.DialogResult = DialogResult.Cancel;
         }
 
         private void frmLogin_Load(object sender, EventArgs e)

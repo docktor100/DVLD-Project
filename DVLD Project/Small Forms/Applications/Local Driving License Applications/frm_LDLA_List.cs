@@ -160,7 +160,7 @@ namespace DVLD_Project.Small_Forms.Applications
 
 
             DialogResult ConfirmResult = MessageBox.Show("Are you sure you want to cancel this application?", "Cancel Application", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-            if (ConfirmResult == DialogResult.No)
+            if (ConfirmResult != DialogResult.Yes)
             {
                 return;
             }
@@ -184,7 +184,7 @@ namespace DVLD_Project.Small_Forms.Applications
                 " driving application?, you wont be able to redo this move", "Warning",
                 MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
 
-            if (result == DialogResult.No)
+            if (result != DialogResult.Yes)
             {
                 return;
             }

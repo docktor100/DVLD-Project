@@ -85,7 +85,7 @@ namespace DVLD_Project.Small_Forms.Applications.Local_Driving_License_Applicatio
                 LDLA.Status = clsApplication.enStatus.Completed;
                 LDLA.Save();//for updating status
 
-                MessageBox.Show($"License issued Successfully with PersonID = {NewLicense.LicenseID}", "License Issue");
+                MessageBox.Show($"License issued Successfully with ID = {NewLicense.LicenseID}", "License Issue");
                 DoUpdate_LDLA_List = true;
 
                 this.Close();

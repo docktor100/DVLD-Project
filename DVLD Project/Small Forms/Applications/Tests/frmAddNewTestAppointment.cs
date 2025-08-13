@@ -115,7 +115,7 @@ namespace DVLD_Project.Small_Forms
         }
         private void frmAddNewTestAppointment_Load(object sender, EventArgs e)
         {
-            dateTimePicker1.MinDate = DateTime.Now;
+            dateTimePicker1.MinDate = DateTime.Now.AddDays(-1);
 
             if (Trials == 0)
             {

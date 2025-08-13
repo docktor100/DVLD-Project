@@ -167,11 +167,12 @@ namespace DVLD_Project.Small_Forms.Applications.License_Applications
             {
                 DeactivateOldLicense();
 
-                MessageBox.Show($"New License Added Successfully with PersonID = {NewLicense.LicenseID}", "Add New License");
+                MessageBox.Show($"New License Added Successfully with ID = {NewLicense.LicenseID}", "Add New License");
 
                 lblReplacedLicenseID.Text = NewLicense.LicenseID.ToString();
                 lbl_LR_ApplicationID.Text = NewLicense.Application.ApplicationID.ToString();
                 llblShowLicenseInfo.Enabled = true;
+                btnIssue.Enabled = false;
             }
             else
             {

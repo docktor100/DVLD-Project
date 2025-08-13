@@ -82,22 +82,24 @@ namespace DVLD_Project.Small_Forms.Applications.Tests
             DialogResult result = MessageBox.Show("Are You Sure You Want To Save? After This Operation" +
             " You Cannot Change The Result", "Confirm", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation);
 
-            if (result == DialogResult.Yes)
+            if (result != DialogResult.Yes)
             {
-                if (Test.Save())
-                {
-                    MessageBox.Show("Data Saved Successfully", "Save", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
 
-                    if (Test.TestResult == true)
-                        IsPassed = true;
+            if (Test.Save())
+            {
+                MessageBox.Show("Data Saved Successfully", "Save", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                    DoUpdateDataGridView = true;
-                    this.Close();
-                }
-                else
-                {
-                    MessageBox.Show("Failed to save data", "Save", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
+                if (Test.TestResult == true)
+                    IsPassed = true;
+
+                DoUpdateDataGridView = true;
+                this.Close();
+            }
+            else
+            {
+                MessageBox.Show("Failed to save data", "Save", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
         }

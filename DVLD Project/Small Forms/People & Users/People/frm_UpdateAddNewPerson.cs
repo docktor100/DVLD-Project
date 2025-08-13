@@ -12,8 +12,7 @@ namespace DVLD_Project.Small_Forms
         public clsPerson Person { get; set; } = null;
         string CurrentImagePath = default;
 
-        bool _DoUpdatGridView = false;
-        public bool DoUpdatGridView { get; } = false;
+        public bool DoUpdatGridView { get; set; } = false;
 
         enum enMode { AddNew, Update } //##
         enMode Mode;
@@ -303,7 +302,7 @@ namespace DVLD_Project.Small_Forms
                 }
 
                 Mode = enMode.Update;
-                _DoUpdatGridView = true;
+                DoUpdatGridView = true;
             }
             else
             {

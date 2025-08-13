@@ -117,5 +117,10 @@ namespace DVLD_Project
             frmManageDetainedLicenses frm = new frmManageDetainedLicenses();
             frm.ShowDialog();
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

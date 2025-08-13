@@ -83,10 +83,10 @@ The application simulates a real-world **Drivers and Vehicles Licenses Departmen
 
 1. Clone the repository:  
    ```bash
-   git clone https://github.com/your-username/your-repo-name.git
+   git clone https://github.com/docktor100/DVLD-Project.git
 
 2. **Restore the database**   
-   Restore the `DVLD.bak` database file (included in the `/Database` folder) to your local SQL Server instance.
+   Restore the `DVLD.bak` database file (included in the `/Database` folder) to your local SQL Server instance, and make sure to name it "`DVLD`"
 
 3. **Configure the connection string**   
    Open the `App.config` file and update the connection string with your SQL Server credentials:  
@@ -98,6 +98,9 @@ The application simulates a real-world **Drivers and Vehicles Licenses Departmen
    Open the `.sln` file in Visual Studio 2022 or later.  
    Ensure the **.NET desktop development** workload is installed.  
    If not, open the Visual Studio Installer, choose **Modify**, and select the **.NET desktop development** workload.
+
+5. **Log in**  
+   Enter the `username` "Ali" and the `password` "1234", then select the "Remember Me" option.
 
 
 ## 📝 Note

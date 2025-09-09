@@ -4,7 +4,7 @@
 
 This is an **educational project** developed independently using **C# Windows Forms** on the **.NET Framework**. The **UI design and database** were taken from the learning platform, while all logic and implementation were built from scratch.
 
-The application simulates a real-world **Drivers and Vehicles Licenses Department**, providing a range of features for managing applicants, users, and license-related services.
+The application simulates a real-world **Drivers and Vehicles Licenses Department**, providing a range of features for managing applicants, users, and license-related services. to see the **project showcase** click [here](https://www.linkedin.com/posts/abullah-akram-al-jaf-a23b84379_a-showcase-of-my-dvld-project-took-me-about-activity-7362088246698205184-abJ_?utm_source=share&utm_medium=member_android&rcm=ACoAAF2cvLsBDSl8Xn3XYB8oUgyuAaJmbcFPF6M).
 
 ---
 
